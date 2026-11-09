@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "baseUrl": "https://raw.githubusercontent.com/hongdthaui/drawmusic_data/main/soundfonts/segmented/",
+  "manifest": "soundfonts/segmented_manifest.json",
+  "catalog": "soundfonts/instrument_catalog.json",
+  "core": {
+    "file": "soundfonts/core.sf2",
+    "bytes": 2001788,
+    "sha256": "932145c6c1454c115fe5fee1086a70279b64d7065902bcf8f64237bf1f5f23ef"
+  },
+  "instrumentCount": 274,
+  "segmentedBytes": 147290228
+}

@@ -1,0 +1,25 @@
+{
+  "engine": "FluidSynth",
+  "engine_version": "2.6.2",
+  "engine_release": "https://github.com/FluidSynth/fluidsynth/releases/tag/v2.6.2",
+  "soundfont": {
+    "file": "GeneralUser-GS.sf2",
+    "display_name": "GeneralUser GS 2.0.3 BETA",
+    "author": "S. Christian Collins",
+    "source": "https://raw.githubusercontent.com/komtlabuketam/draw_music_banix/main/Data/sound/GeneralUser-GS.sf2",
+    "bytes": 32319396,
+    "sha256": "9575028c7a1f589f5770fccc8cff2734566af40cd26ed836944e9a5152688cfe",
+    "license_file": "GeneralUser-GS-LICENSE.txt"
+  },
+  "catalog": {
+    "preset_ids": 274,
+    "legacy_ids": 13,
+    "file": "instrument_catalog.json"
+  },
+  "reference_app": {
+    "package": "com.banix.drawsound.drawmusic",
+    "version": "2.7",
+    "reference_engine": "2.4.6"
+  },
+  "migration": "Shared C API core; 96-tick backing scheduler; SF2 rendering replaces oscillators. New engine version may differ audibly from the reference."
+}

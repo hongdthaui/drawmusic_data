@@ -1,0 +1,5631 @@
+{
+  "version": 1,
+  "description": "Authoritative instrument-to-color catalog used by the core row, wheel and drawing.",
+  "notes": {
+    "color": "Opaque #RRGGBB cell fill shown in inlineInstrumentWheel.",
+    "packId": "core identifies 17 bundled presets; full identifies 257 additional presets, including Flute. Once downloaded, the full bank replaces core for all 274 presets.",
+    "editing": "Edit each instrument color here. The metadata refresh script preserves colors and labels. Enum IDs and bank/program mappings must remain consistent with the application catalog.",
+    "indices": "bank, program, soundFontIndex, row and column are zero-based.",
+    "usage": "Runtime source of instrument colors and core membership, parsed once and shared by the row, wheel, drawing and completed-stroke renderer."
+  },
+  "generator": "tools/export_instrument_color_map.py",
+  "rows": 7,
+  "packs": {
+    "core": {
+      "asset": "soundfonts/core.sf2",
+      "bytes": 2001788,
+      "sha256": "932145c6c1454c115fe5fee1086a70279b64d7065902bcf8f64237bf1f5f23ef"
+    },
+    "full": {
+      "url": "https://raw.githubusercontent.com/komtlabuketam/draw_music_banix/main/Data/sound/GeneralUser-GS.sf2",
+      "bytes": 32319396,
+      "sha256": "9575028c7a1f589f5770fccc8cff2734566af40cd26ed836944e9a5152688cfe",
+      "replaces": [
+        "core"
+      ]
+    }
+  },
+  "instrumentCount": 274,
+  "groupCount": 17,
+  "groups": [
+    {
+      "name": "Piano",
+      "code": "PN",
+      "columns": 3,
+      "instruments": [
+        {
+          "id": "SF_SOFT_KEY",
+          "label": "PN01",
+          "icon": "ic_inst_b000_p004",
+          "packId": "core",
+          "displayName": "SF Soft Key",
+          "soundFontName": "Tine Electric Piano",
+          "color": "#8277DB",
+          "copicColorId": "YR09",
+          "row": 0,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": "soundfonts/core.sf2",
+            "soundFontIndex": 0,
+            "bank": 0,
+            "program": 4,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_0",
+          "label": "PN02",
+          "icon": "ic_inst_b000_p000",
+          "packId": "full",
+          "displayName": "SF Grand Piano",
+          "soundFontName": "Grand Piano",
+          "color": "#FFF3E3",
+          "copicColorId": "YR0000",
+          "row": 0,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 13,
+            "bank": 0,
+            "program": 0,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_1",
+          "label": "PN03",
+          "icon": "ic_inst_b000_p001",
+          "packId": "full",
+          "displayName": "SF Bright Grand Piano",
+          "soundFontName": "Bright Grand Piano",
+          "color": "#E98D30",
+          "copicColorId": "YR24",
+          "row": 0,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 14,
+            "bank": 0,
+            "program": 1,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_2",
+          "label": "PN04",
+          "icon": "ic_inst_b000_p002",
+          "packId": "full",
+          "displayName": "SF Electric Grand Piano",
+          "soundFontName": "Electric Grand Piano",
+          "color": "#F9642D",
+          "copicColorId": "YR07",
+          "row": 1,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 15,
+            "bank": 0,
+            "program": 2,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_3",
+          "label": "PN05",
+          "icon": "ic_inst_b000_p003",
+          "packId": "full",
+          "displayName": "SF Honky-Tonk Piano",
+          "soundFontName": "Honky-Tonk Piano",
+          "color": "#DB653F",
+          "copicColorId": "YR18",
+          "row": 1,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 16,
+            "bank": 0,
+            "program": 3,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_5",
+          "label": "PN06",
+          "icon": "ic_inst_b000_p005",
+          "packId": "full",
+          "displayName": "SF FM Electric Piano",
+          "soundFontName": "FM Electric Piano",
+          "color": "#EF9D46",
+          "copicColorId": "YR23",
+          "row": 1,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 17,
+            "bank": 0,
+            "program": 5,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_6",
+          "label": "PN07",
+          "icon": "ic_inst_b000_p006",
+          "packId": "full",
+          "displayName": "SF Harpsichord",
+          "soundFontName": "Harpsichord",
+          "color": "#FF8C36",
+          "copicColorId": "YR04",
+          "row": 2,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 18,
+            "bank": 0,
+            "program": 6,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_7",
+          "label": "PN08",
+          "icon": "ic_inst_b000_p007",
+          "packId": "full",
+          "displayName": "SF Clavinet",
+          "soundFontName": "Clavinet",
+          "color": "#FF8726",
+          "copicColorId": "YR16",
+          "row": 2,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 19,
+            "bank": 0,
+            "program": 7,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_4",
+          "label": "PN09",
+          "icon": "ic_inst_b008_p004",
+          "packId": "full",
+          "displayName": "SF Chorused Tine EP",
+          "soundFontName": "Chorused Tine EP",
+          "color": "#FFC675",
+          "copicColorId": "YR21",
+          "row": 2,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 172,
+            "bank": 8,
+            "program": 4,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_5",
+          "label": "PN10",
+          "icon": "ic_inst_b008_p005",
+          "packId": "full",
+          "displayName": "SF Chorused FM EP",
+          "soundFontName": "Chorused FM EP",
+          "color": "#FF9F71",
+          "copicColorId": "YR02",
+          "row": 3,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 173,
+            "bank": 8,
+            "program": 5,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_6",
+          "label": "PN11",
+          "icon": "ic_inst_b008_p006",
+          "packId": "full",
+          "displayName": "SF Coupled Harpsichord",
+          "soundFontName": "Coupled Harpsichord",
+          "color": "#FF963E",
+          "copicColorId": "YR15",
+          "row": 3,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 174,
+            "bank": 8,
+            "program": 6,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_0",
+          "label": "PN12",
+          "icon": "ic_inst_b011_p000",
+          "packId": "full",
+          "displayName": "SF Piano & Str.-Fade",
+          "soundFontName": "Piano & Str.-Fade",
+          "color": "#FFDCAE",
+          "copicColorId": "YR20",
+          "row": 3,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 204,
+            "bank": 11,
+            "program": 0,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_1",
+          "label": "PN13",
+          "icon": "ic_inst_b011_p001",
+          "packId": "full",
+          "displayName": "SF Piano & Str.-Sus",
+          "soundFontName": "Piano & Str.-Sus",
+          "color": "#FFBD97",
+          "copicColorId": "YR01",
+          "row": 4,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 205,
+            "bank": 11,
+            "program": 1,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_4",
+          "label": "PN14",
+          "icon": "ic_inst_b011_p004",
+          "packId": "full",
+          "displayName": "SF Tine & FM EPs",
+          "soundFontName": "Tine & FM EPs",
+          "color": "#FFA457",
+          "copicColorId": "YR12",
+          "row": 4,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 206,
+            "bank": 11,
+            "program": 4,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_5",
+          "label": "PN15",
+          "icon": "ic_inst_b011_p005",
+          "packId": "full",
+          "displayName": "SF Piano & FM EP",
+          "soundFontName": "Piano & FM EP",
+          "color": "#FFD07D",
+          "copicColorId": "YR31",
+          "row": 4,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 207,
+            "bank": 11,
+            "program": 5,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_6",
+          "label": "PN16",
+          "icon": "ic_inst_b011_p006",
+          "packId": "full",
+          "displayName": "SF Harpsichord noVel",
+          "soundFontName": "Harpsichord noVel",
+          "color": "#FFCCA9",
+          "copicColorId": "YR00",
+          "row": 5,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 208,
+            "bank": 11,
+            "program": 6,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_12_PROGRAM_0",
+          "label": "PN17",
+          "icon": "ic_inst_b012_p000",
+          "packId": "full",
+          "displayName": "SF Bell Piano",
+          "soundFontName": "Bell Piano",
+          "color": "#D56637",
+          "copicColorId": "YR27",
+          "row": 5,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 235,
+            "bank": 12,
+            "program": 0,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_12_PROGRAM_4",
+          "label": "PN18",
+          "icon": "ic_inst_b012_p004",
+          "packId": "full",
+          "displayName": "SF Bell Tine EP",
+          "soundFontName": "Bell Tine EP",
+          "color": "#FEF3D9",
+          "copicColorId": "YR30",
+          "row": 5,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 236,
+            "bank": 12,
+            "program": 4,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_12_PROGRAM_6",
+          "label": "PN19",
+          "icon": "ic_inst_b012_p006",
+          "packId": "full",
+          "displayName": "SF Coupled Harpsi noVel",
+          "soundFontName": "Coupled Harpsi noVel",
+          "color": "#FFE5CD",
+          "copicColorId": "YR000",
+          "row": 6,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 237,
+            "bank": 12,
+            "program": 6,
+            "isDrumKit": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chromatic percussion",
+      "code": "CP",
+      "columns": 2,
+      "instruments": [
+        {
+          "id": "SF_MARIMBA",
+          "label": "CP01",
+          "icon": "ic_inst_b000_p012",
+          "packId": "core",
+          "displayName": "SF Marimba",
+          "soundFontName": "Marimba",
+          "color": "#E89E09",
+          "copicColorId": "YR68",
+          "row": 0,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": "soundfonts/core.sf2",
+            "soundFontIndex": 1,
+            "bank": 0,
+            "program": 12,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BELLS",
+          "label": "CP02",
+          "icon": "ic_inst_b000_p014",
+          "packId": "full",
+          "displayName": "SF Bells",
+          "soundFontName": "Tubular Bells",
+          "color": "#3A9E74",
+          "copicColorId": "E02",
+          "row": 0,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 3,
+            "bank": 0,
+            "program": 14,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_CHIME",
+          "label": "CP03",
+          "icon": "ic_inst_b000_p010",
+          "packId": "core",
+          "displayName": "SF Chime",
+          "soundFontName": "Music Box",
+          "color": "#85BEE8",
+          "copicColorId": "YR65",
+          "row": 1,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": "soundfonts/core.sf2",
+            "soundFontIndex": 7,
+            "bank": 0,
+            "program": 10,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_8",
+          "label": "CP04",
+          "icon": "ic_inst_b000_p008",
+          "packId": "core",
+          "displayName": "SF Celeste",
+          "soundFontName": "Celeste",
+          "color": "#FFD5BD",
+          "copicColorId": "E01",
+          "row": 1,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": "soundfonts/core.sf2",
+            "soundFontIndex": 20,
+            "bank": 0,
+            "program": 8,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_9",
+          "label": "CP05",
+          "icon": "ic_inst_b000_p009",
+          "packId": "core",
+          "displayName": "SF Glockenspiel",
+          "soundFontName": "Glockenspiel",
+          "color": "#FFD59B",
+          "copicColorId": "YR82",
+          "row": 2,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": "soundfonts/core.sf2",
+            "soundFontIndex": 21,
+            "bank": 0,
+            "program": 9,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_11",
+          "label": "CP06",
+          "icon": "ic_inst_b000_p011",
+          "packId": "core",
+          "displayName": "SF Vibraphone",
+          "soundFontName": "Vibraphone",
+          "color": "#FFE1C7",
+          "copicColorId": "E00",
+          "row": 2,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": "soundfonts/core.sf2",
+            "soundFontIndex": 22,
+            "bank": 0,
+            "program": 11,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_13",
+          "label": "CP07",
+          "icon": "ic_inst_b000_p013",
+          "packId": "core",
+          "displayName": "SF Xylophone",
+          "soundFontName": "Xylophone",
+          "color": "#9B4D44",
+          "copicColorId": "E09",
+          "row": 3,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": "soundfonts/core.sf2",
+            "soundFontIndex": 23,
+            "bank": 0,
+            "program": 13,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_15",
+          "label": "CP08",
+          "icon": "ic_inst_b000_p015",
+          "packId": "full",
+          "displayName": "SF Dulcimer",
+          "soundFontName": "Dulcimer",
+          "color": "#FFEEDC",
+          "copicColorId": "E000",
+          "row": 3,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 24,
+            "bank": 0,
+            "program": 15,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_14",
+          "label": "CP09",
+          "icon": "ic_inst_b008_p014",
+          "packId": "full",
+          "displayName": "SF Church Bells",
+          "soundFontName": "Church Bells",
+          "color": "#C15D4E",
+          "copicColorId": "E08",
+          "row": 4,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 175,
+            "bank": 8,
+            "program": 14,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_9_PROGRAM_14",
+          "label": "CP10",
+          "icon": "ic_inst_b009_p014",
+          "packId": "full",
+          "displayName": "SF Carillon",
+          "soundFontName": "Carillon",
+          "color": "#FFF4E4",
+          "copicColorId": "E0000",
+          "row": 4,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 202,
+            "bank": 9,
+            "program": 14,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_8",
+          "label": "CP11",
+          "icon": "ic_inst_b011_p008",
+          "packId": "full",
+          "displayName": "SF Tinkling Bells",
+          "soundFontName": "Tinkling Bells",
+          "color": "#B4544E",
+          "copicColorId": "E07",
+          "row": 5,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 209,
+            "bank": 11,
+            "program": 8,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_11",
+          "label": "CP12",
+          "icon": "ic_inst_b011_p011",
+          "packId": "full",
+          "displayName": "SF Vibraphone No Trem.",
+          "soundFontName": "Vibraphone No Trem.",
+          "color": "#744B44",
+          "copicColorId": "E18",
+          "row": 5,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 210,
+            "bank": 11,
+            "program": 11,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_14",
+          "label": "CP13",
+          "icon": "ic_inst_b011_p014",
+          "packId": "full",
+          "displayName": "SF Bell Tower",
+          "soundFontName": "Bell Tower",
+          "color": "#CC8C8C",
+          "copicColorId": "E04",
+          "row": 6,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 211,
+            "bank": 11,
+            "program": 14,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_12_PROGRAM_10",
+          "label": "CP14",
+          "icon": "ic_inst_b012_p010",
+          "packId": "full",
+          "displayName": "SF Christmas Bells",
+          "soundFontName": "Christmas Bells",
+          "color": "#AC6556",
+          "copicColorId": "E17",
+          "row": 6,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 238,
+            "bank": 12,
+            "program": 10,
+            "isDrumKit": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Synth pad",
+      "code": "PD",
+      "columns": 2,
+      "instruments": [
+        {
+          "id": "SF_WARM_SYNTH",
+          "label": "PD01",
+          "icon": "ic_inst_b000_p088",
+          "packId": "full",
+          "displayName": "SF Warm Synth",
+          "soundFontName": "Fantasia",
+          "color": "#D05928",
+          "copicColorId": "E15",
+          "row": 0,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 2,
+            "bank": 0,
+            "program": 88,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_89",
+          "label": "PD02",
+          "icon": "ic_inst_b000_p089",
+          "packId": "full",
+          "displayName": "SF Warm Pad",
+          "soundFontName": "Warm Pad",
+          "color": "#FFCEA0",
+          "copicColorId": "E21",
+          "row": 0,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 89,
+            "bank": 0,
+            "program": 89,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_90",
+          "label": "PD03",
+          "icon": "ic_inst_b000_p090",
+          "packId": "full",
+          "displayName": "SF Polysynth",
+          "soundFontName": "Polysynth",
+          "color": "#E69E7A",
+          "copicColorId": "E13",
+          "row": 1,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 90,
+            "bank": 0,
+            "program": 90,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_91",
+          "label": "PD04",
+          "icon": "ic_inst_b000_p091",
+          "packId": "full",
+          "displayName": "SF Space Voice",
+          "soundFontName": "Space Voice",
+          "color": "#9C6147",
+          "copicColorId": "E37",
+          "row": 1,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 91,
+            "bank": 0,
+            "program": 91,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_92",
+          "label": "PD05",
+          "icon": "ic_inst_b000_p092",
+          "packId": "full",
+          "displayName": "SF Bowed Glass",
+          "soundFontName": "Bowed Glass",
+          "color": "#FCC39E",
+          "copicColorId": "E11",
+          "row": 2,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 92,
+            "bank": 0,
+            "program": 92,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_93",
+          "label": "PD06",
+          "icon": "ic_inst_b000_p093",
+          "packId": "full",
+          "displayName": "SF Metal Pad",
+          "soundFontName": "Metal Pad",
+          "color": "#C48455",
+          "copicColorId": "E35",
+          "row": 2,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 93,
+            "bank": 0,
+            "program": 93,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_94",
+          "label": "PD07",
+          "icon": "ic_inst_b000_p094",
+          "packId": "full",
+          "displayName": "SF Halo Pad",
+          "soundFontName": "Halo Pad",
+          "color": "#6E4C44",
+          "copicColorId": "E29",
+          "row": 3,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 94,
+            "bank": 0,
+            "program": 94,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_95",
+          "label": "PD08",
+          "icon": "ic_inst_b000_p095",
+          "packId": "full",
+          "displayName": "SF Sweep Pad",
+          "soundFontName": "Sweep Pad",
+          "color": "#D9996C",
+          "copicColorId": "E34",
+          "row": 3,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 95,
+            "bank": 0,
+            "program": 95,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_88",
+          "label": "PD09",
+          "icon": "ic_inst_b011_p088",
+          "packId": "full",
+          "displayName": "SF Harpsi Pad",
+          "soundFontName": "Harpsi Pad",
+          "color": "#83584A",
+          "copicColorId": "E27",
+          "row": 4,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 226,
+            "bank": 11,
+            "program": 88,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_89",
+          "label": "PD10",
+          "icon": "ic_inst_b011_p089",
+          "packId": "full",
+          "displayName": "SF Solar Wind",
+          "soundFontName": "Solar Wind",
+          "color": "#DE9C6F",
+          "copicColorId": "E33",
+          "row": 4,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 227,
+            "bank": 11,
+            "program": 89,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_12_PROGRAM_88",
+          "label": "PD11",
+          "icon": "ic_inst_b012_p088",
+          "packId": "full",
+          "displayName": "SF Fantasia 2",
+          "soundFontName": "Fantasia 2",
+          "color": "#A56E5A",
+          "copicColorId": "E25",
+          "row": 5,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 248,
+            "bank": 12,
+            "program": 88,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_12_PROGRAM_89",
+          "label": "PD12",
+          "icon": "ic_inst_b012_p089",
+          "packId": "full",
+          "displayName": "SF Solar Wind 2",
+          "soundFontName": "Solar Wind 2",
+          "color": "#EEC694",
+          "copicColorId": "E31",
+          "row": 5,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 249,
+            "bank": 12,
+            "program": 89,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_13_PROGRAM_88",
+          "label": "PD13",
+          "icon": "ic_inst_b013_p088",
+          "packId": "full",
+          "displayName": "SF Night Vision",
+          "soundFontName": "Night Vision",
+          "color": "#C18260",
+          "copicColorId": "E23",
+          "row": 6,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 256,
+            "bank": 13,
+            "program": 88,
+            "isDrumKit": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Guitar",
+      "code": "GT",
+      "columns": 3,
+      "instruments": [
+        {
+          "id": "SF_PLUCK",
+          "label": "GT01",
+          "icon": "ic_inst_b000_p024",
+          "packId": "core",
+          "displayName": "SF Pluck",
+          "soundFontName": "Nylon Guitar",
+          "color": "#8BC34A",
+          "copicColorId": "E30",
+          "row": 0,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": "soundfonts/core.sf2",
+            "soundFontIndex": 4,
+            "bank": 0,
+            "program": 24,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_GUITAR",
+          "label": "GT02",
+          "icon": "ic_inst_b000_p025",
+          "packId": "full",
+          "displayName": "SF Guitar",
+          "soundFontName": "Steel Guitar",
+          "color": "#C46D46",
+          "copicColorId": "E40",
+          "row": 0,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 11,
+            "bank": 0,
+            "program": 25,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_26",
+          "label": "GT03",
+          "icon": "ic_inst_b000_p026",
+          "packId": "full",
+          "displayName": "SF Jazz Guitar",
+          "soundFontName": "Jazz Guitar",
+          "color": "#FFEFD5",
+          "copicColorId": "E50",
+          "row": 0,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 33,
+            "bank": 0,
+            "program": 26,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_27",
+          "label": "GT04",
+          "icon": "ic_inst_b000_p027",
+          "packId": "full",
+          "displayName": "SF Clean Guitar",
+          "soundFontName": "Clean Guitar",
+          "color": "#4F4540",
+          "copicColorId": "E49",
+          "row": 1,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 34,
+            "bank": 0,
+            "program": 27,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_28",
+          "label": "GT05",
+          "icon": "ic_inst_b000_p028",
+          "packId": "full",
+          "displayName": "SF Muted Guitar",
+          "soundFontName": "Muted Guitar",
+          "color": "#715245",
+          "copicColorId": "E59",
+          "row": 1,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 35,
+            "bank": 0,
+            "program": 28,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_29",
+          "label": "GT06",
+          "icon": "ic_inst_b000_p029",
+          "packId": "full",
+          "displayName": "SF Overdrive Guitar",
+          "soundFontName": "Overdrive Guitar",
+          "color": "#675551",
+          "copicColorId": "E79",
+          "row": 1,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 36,
+            "bank": 0,
+            "program": 29,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_30",
+          "label": "GT07",
+          "icon": "ic_inst_b000_p030",
+          "packId": "full",
+          "displayName": "SF Distortion Guitar",
+          "soundFontName": "Distortion Guitar",
+          "color": "#78594B",
+          "copicColorId": "E47",
+          "row": 2,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 37,
+            "bank": 0,
+            "program": 30,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_31",
+          "label": "GT08",
+          "icon": "ic_inst_b000_p031",
+          "packId": "full",
+          "displayName": "SF Guitar Harmonics",
+          "soundFontName": "Guitar Harmonics",
+          "color": "#9A6A4E",
+          "copicColorId": "E57",
+          "row": 2,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 38,
+            "bank": 0,
+            "program": 31,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_24",
+          "label": "GT09",
+          "icon": "ic_inst_b008_p024",
+          "packId": "full",
+          "displayName": "SF Ukulele",
+          "soundFontName": "Ukulele",
+          "color": "#7F655F",
+          "copicColorId": "E77",
+          "row": 2,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 180,
+            "bank": 8,
+            "program": 24,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_25",
+          "label": "GT10",
+          "icon": "ic_inst_b008_p025",
+          "packId": "full",
+          "displayName": "SF 12-String Guitar",
+          "soundFontName": "12-String Guitar",
+          "color": "#9A7F60",
+          "copicColorId": "E44",
+          "row": 3,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 181,
+            "bank": 8,
+            "program": 25,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_26",
+          "label": "GT11",
+          "icon": "ic_inst_b008_p026",
+          "packId": "full",
+          "displayName": "SF Hawaiian Guitar",
+          "soundFontName": "Hawaiian Guitar",
+          "color": "#D4A36E",
+          "copicColorId": "E55",
+          "row": 3,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 182,
+            "bank": 8,
+            "program": 26,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_27",
+          "label": "GT12",
+          "icon": "ic_inst_b008_p027",
+          "packId": "full",
+          "displayName": "SF Chorused Clean Gt.",
+          "soundFontName": "Chorused Clean Gt.",
+          "color": "#BB9F96",
+          "copicColorId": "E71",
+          "row": 3,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 183,
+            "bank": 8,
+            "program": 27,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_28",
+          "label": "GT13",
+          "icon": "ic_inst_b008_p028",
+          "packId": "full",
+          "displayName": "SF Funk Guitar",
+          "soundFontName": "Funk Guitar",
+          "color": "#D0B18C",
+          "copicColorId": "E43",
+          "row": 4,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 184,
+            "bank": 8,
+            "program": 28,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_30",
+          "label": "GT14",
+          "icon": "ic_inst_b008_p030",
+          "packId": "full",
+          "displayName": "SF Feedback Guitar",
+          "soundFontName": "Feedback Guitar",
+          "color": "#F3C895",
+          "copicColorId": "E53",
+          "row": 4,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 185,
+            "bank": 8,
+            "program": 30,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_31",
+          "label": "GT15",
+          "icon": "ic_inst_b008_p031",
+          "packId": "full",
+          "displayName": "SF Guitar Feedback",
+          "soundFontName": "Guitar Feedback",
+          "color": "#D8C1B6",
+          "copicColorId": "E70",
+          "row": 4,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 186,
+            "bank": 8,
+            "program": 31,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_29",
+          "label": "GT16",
+          "icon": "ic_inst_b011_p029",
+          "packId": "full",
+          "displayName": "SF Wah Guitar (CC21)",
+          "soundFontName": "Wah Guitar (CC21)",
+          "color": "#F8E4C5",
+          "copicColorId": "E41",
+          "row": 5,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 217,
+            "bank": 11,
+            "program": 29,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_12_PROGRAM_27",
+          "label": "GT17",
+          "icon": "ic_inst_b012_p027",
+          "packId": "full",
+          "displayName": "SF Clean Guitar 2",
+          "soundFontName": "Clean Guitar 2",
+          "color": "#FFE3BD",
+          "copicColorId": "E51",
+          "row": 5,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 242,
+            "bank": 12,
+            "program": 27,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_16_PROGRAM_25",
+          "label": "GT18",
+          "icon": "ic_inst_b016_p025",
+          "packId": "full",
+          "displayName": "SF Mandolin",
+          "soundFontName": "Mandolin",
+          "color": "#5A4938",
+          "copicColorId": "E89",
+          "row": 5,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 257,
+            "bank": 16,
+            "program": 25,
+            "isDrumKit": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pipe",
+      "code": "PI",
+      "columns": 2,
+      "instruments": [
+        {
+          "id": "SF_FLUTE",
+          "label": "PI01",
+          "icon": "ic_inst_b000_p073",
+          "packId": "full",
+          "displayName": "SF Flute",
+          "soundFontName": "Flute",
+          "color": "#3E5EC6",
+          "copicColorId": "E87",
+          "row": 0,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 5,
+            "bank": 0,
+            "program": 73,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_72",
+          "label": "PI02",
+          "icon": "ic_inst_b000_p072",
+          "packId": "full",
+          "displayName": "SF Piccolo",
+          "soundFontName": "Piccolo",
+          "color": "#FFBDA7",
+          "copicColorId": "E93",
+          "row": 0,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 75,
+            "bank": 0,
+            "program": 72,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_74",
+          "label": "PI03",
+          "icon": "ic_inst_b000_p074",
+          "packId": "full",
+          "displayName": "SF Recorder",
+          "soundFontName": "Recorder",
+          "color": "#AC9E7F",
+          "copicColorId": "E84",
+          "row": 1,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 76,
+            "bank": 0,
+            "program": 74,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_75",
+          "label": "PI04",
+          "icon": "ic_inst_b000_p075",
+          "packId": "full",
+          "displayName": "SF Pan Flute",
+          "soundFontName": "Pan Flute",
+          "color": "#FFF000",
+          "copicColorId": "Y06",
+          "row": 1,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 77,
+            "bank": 0,
+            "program": 75,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_76",
+          "label": "PI05",
+          "icon": "ic_inst_b000_p076",
+          "packId": "full",
+          "displayName": "SF Bottle Blow",
+          "soundFontName": "Bottle Blow",
+          "color": "#EDDDB5",
+          "copicColorId": "E81",
+          "row": 2,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 78,
+            "bank": 0,
+            "program": 76,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_77",
+          "label": "PI06",
+          "icon": "ic_inst_b000_p077",
+          "packId": "full",
+          "displayName": "SF Shakuhachi",
+          "soundFontName": "Shakuhachi",
+          "color": "#FFF13A",
+          "copicColorId": "Y04",
+          "row": 2,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 79,
+            "bank": 0,
+            "program": 77,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_78",
+          "label": "PI07",
+          "icon": "ic_inst_b000_p078",
+          "packId": "full",
+          "displayName": "SF Whistle",
+          "soundFontName": "Whistle",
+          "color": "#AC6240",
+          "copicColorId": "E99",
+          "row": 3,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 80,
+            "bank": 0,
+            "program": 78,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_79",
+          "label": "PI08",
+          "icon": "ic_inst_b000_p079",
+          "packId": "full",
+          "displayName": "SF Ocarina",
+          "soundFontName": "Ocarina",
+          "color": "#FFEE62",
+          "copicColorId": "Y02",
+          "row": 3,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 81,
+            "bank": 0,
+            "program": 79,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_78",
+          "label": "PI09",
+          "icon": "ic_inst_b011_p078",
+          "packId": "full",
+          "displayName": "SF Whistlin'",
+          "soundFontName": "Whistlin'",
+          "color": "#ED915A",
+          "copicColorId": "E97",
+          "row": 4,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 224,
+            "bank": 11,
+            "program": 78,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_24_PROGRAM_75",
+          "label": "PI10",
+          "icon": "ic_inst_b024_p075",
+          "packId": "full",
+          "displayName": "SF Tin Whistle",
+          "soundFontName": "Tin Whistle",
+          "color": "#F9FF9C",
+          "copicColorId": "Y00",
+          "row": 4,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 258,
+            "bank": 24,
+            "program": 75,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_25_PROGRAM_75",
+          "label": "PI11",
+          "icon": "ic_inst_b025_p075",
+          "packId": "full",
+          "displayName": "SF Tin Whistle Nm",
+          "soundFontName": "Tin Whistle Nm",
+          "color": "#FFB68D",
+          "copicColorId": "E95",
+          "row": 5,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 259,
+            "bank": 25,
+            "program": 75,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_26_PROGRAM_75",
+          "label": "PI12",
+          "icon": "ic_inst_b026_p075",
+          "packId": "full",
+          "displayName": "SF Tin Whistle Or",
+          "soundFontName": "Tin Whistle Or",
+          "color": "#F7FFB9",
+          "copicColorId": "Y000",
+          "row": 5,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 260,
+            "bank": 26,
+            "program": 75,
+            "isDrumKit": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ensemble",
+      "code": "EN",
+      "columns": 3,
+      "instruments": [
+        {
+          "id": "SF_STRINGS",
+          "label": "EN01",
+          "icon": "ic_inst_b000_p048",
+          "packId": "full",
+          "displayName": "SF Strings",
+          "soundFontName": "Fast Strings",
+          "color": "#DE7BAE",
+          "copicColorId": "Y0000",
+          "row": 0,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 6,
+            "bank": 0,
+            "program": 48,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_49",
+          "label": "EN02",
+          "icon": "ic_inst_b000_p049",
+          "packId": "full",
+          "displayName": "SF Slow Strings",
+          "soundFontName": "Slow Strings",
+          "color": "#ECAC42",
+          "copicColorId": "Y26",
+          "row": 0,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 53,
+            "bank": 0,
+            "program": 49,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_50",
+          "label": "EN03",
+          "icon": "ic_inst_b000_p050",
+          "packId": "full",
+          "displayName": "SF Synth Strings 1",
+          "soundFontName": "Synth Strings 1",
+          "color": "#45B046",
+          "copicColorId": "YG09",
+          "row": 0,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 54,
+            "bank": 0,
+            "program": 50,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_51",
+          "label": "EN04",
+          "icon": "ic_inst_b000_p051",
+          "packId": "full",
+          "displayName": "SF Synth Strings 2",
+          "soundFontName": "Synth Strings 2",
+          "color": "#FFB424",
+          "copicColorId": "Y19",
+          "row": 1,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 55,
+            "bank": 0,
+            "program": 51,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_52",
+          "label": "EN05",
+          "icon": "ic_inst_b000_p052",
+          "packId": "full",
+          "displayName": "SF Concert Choir",
+          "soundFontName": "Concert Choir",
+          "color": "#FFD184",
+          "copicColorId": "Y23",
+          "row": 1,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 56,
+            "bank": 0,
+            "program": 52,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_53",
+          "label": "EN06",
+          "icon": "ic_inst_b000_p053",
+          "packId": "full",
+          "displayName": "SF Voice Oohs",
+          "soundFontName": "Voice Oohs",
+          "color": "#79CA42",
+          "copicColorId": "YG07",
+          "row": 1,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 57,
+            "bank": 0,
+            "program": 53,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_54",
+          "label": "EN07",
+          "icon": "ic_inst_b000_p054",
+          "packId": "full",
+          "displayName": "SF Synth Voice",
+          "soundFontName": "Synth Voice",
+          "color": "#FFBC08",
+          "copicColorId": "Y18",
+          "row": 2,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 58,
+            "bank": 0,
+            "program": 54,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_55",
+          "label": "EN08",
+          "icon": "ic_inst_b000_p055",
+          "packId": "full",
+          "displayName": "SF Orchestra Hit",
+          "soundFontName": "Orchestra Hit",
+          "color": "#FFD47A",
+          "copicColorId": "Y21",
+          "row": 2,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 59,
+            "bank": 0,
+            "program": 55,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_1_PROGRAM_48",
+          "label": "EN09",
+          "icon": "ic_inst_b001_p048",
+          "packId": "full",
+          "displayName": "SF Fast Strings Mono",
+          "soundFontName": "Fast Strings Mono",
+          "color": "#A8DA45",
+          "copicColorId": "YG05",
+          "row": 2,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 130,
+            "bank": 1,
+            "program": 48,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_1_PROGRAM_49",
+          "label": "EN10",
+          "icon": "ic_inst_b001_p049",
+          "packId": "full",
+          "displayName": "SF Slow Strings Mono",
+          "soundFontName": "Slow Strings Mono",
+          "color": "#FFB42B",
+          "copicColorId": "Y17",
+          "row": 3,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 131,
+            "bank": 1,
+            "program": 49,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_1_PROGRAM_52",
+          "label": "EN11",
+          "icon": "ic_inst_b001_p052",
+          "packId": "full",
+          "displayName": "SF Concert Choir Mono",
+          "soundFontName": "Concert Choir Mono",
+          "color": "#FFA634",
+          "copicColorId": "Y38",
+          "row": 3,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 132,
+            "bank": 1,
+            "program": 52,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_48",
+          "label": "EN12",
+          "icon": "ic_inst_b008_p048",
+          "packId": "full",
+          "displayName": "SF Orchestra Pad",
+          "soundFontName": "Orchestra Pad",
+          "color": "#C7D54C",
+          "copicColorId": "YG03",
+          "row": 3,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 189,
+            "bank": 8,
+            "program": 48,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_50",
+          "label": "EN13",
+          "icon": "ic_inst_b008_p050",
+          "packId": "full",
+          "displayName": "SF Synth Strings 3",
+          "soundFontName": "Synth Strings 3",
+          "color": "#FFCE2B",
+          "copicColorId": "Y15",
+          "row": 4,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 190,
+            "bank": 8,
+            "program": 50,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_49",
+          "label": "EN14",
+          "icon": "ic_inst_b011_p049",
+          "packId": "full",
+          "displayName": "SF Velo Strings",
+          "soundFontName": "Velo Strings",
+          "color": "#FFC046",
+          "copicColorId": "Y35",
+          "row": 4,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 220,
+            "bank": 11,
+            "program": 49,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_50",
+          "label": "EN15",
+          "icon": "ic_inst_b011_p050",
+          "packId": "full",
+          "displayName": "SF Synth Strings 4",
+          "soundFontName": "Synth Strings 4",
+          "color": "#E8F152",
+          "copicColorId": "YG01",
+          "row": 4,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 221,
+            "bank": 11,
+            "program": 50,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_51",
+          "label": "EN16",
+          "icon": "ic_inst_b011_p051",
+          "packId": "full",
+          "displayName": "SF Synth Strings 5",
+          "soundFontName": "Synth Strings 5",
+          "color": "#FFF780",
+          "copicColorId": "Y11",
+          "row": 5,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 222,
+            "bank": 11,
+            "program": 51,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_12_PROGRAM_48",
+          "label": "EN17",
+          "icon": "ic_inst_b012_p048",
+          "packId": "full",
+          "displayName": "SF Full Orchestra",
+          "soundFontName": "Full Orchestra",
+          "color": "#FFD58F",
+          "copicColorId": "Y32",
+          "row": 5,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 244,
+            "bank": 12,
+            "program": 48,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_12_PROGRAM_49",
+          "label": "EN18",
+          "icon": "ic_inst_b012_p049",
+          "packId": "full",
+          "displayName": "SF Velo Strings Mono",
+          "soundFontName": "Velo Strings Mono",
+          "color": "#F9F57F",
+          "copicColorId": "YG00",
+          "row": 5,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 245,
+            "bank": 12,
+            "program": 49,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_13_PROGRAM_48",
+          "label": "EN19",
+          "icon": "ic_inst_b013_p048",
+          "packId": "full",
+          "displayName": "SF Woodwind Choir",
+          "soundFontName": "Woodwind Choir",
+          "color": "#C1A072",
+          "copicColorId": "Y28",
+          "row": 6,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 253,
+            "bank": 13,
+            "program": 48,
+            "isDrumKit": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bass",
+      "code": "BS",
+      "columns": 2,
+      "instruments": [
+        {
+          "id": "SF_BASS",
+          "label": "BS01",
+          "icon": "ic_inst_b000_p038",
+          "packId": "core",
+          "displayName": "SF Bass",
+          "soundFontName": "Synth Bass 1",
+          "color": "#33312B",
+          "copicColorId": "YG0000",
+          "row": 0,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": "soundfonts/core.sf2",
+            "soundFontIndex": 8,
+            "bank": 0,
+            "program": 38,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_ELECTRONIC_BASS",
+          "label": "BS02",
+          "icon": "ic_inst_b000_p039",
+          "packId": "full",
+          "displayName": "SF Electronic Bass",
+          "soundFontName": "Synth Bass 2",
+          "color": "#168F88",
+          "copicColorId": "YG41",
+          "row": 0,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 10,
+            "bank": 0,
+            "program": 39,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_32",
+          "label": "BS03",
+          "icon": "ic_inst_b000_p032",
+          "packId": "full",
+          "displayName": "SF Acoustic Bass",
+          "soundFontName": "Acoustic Bass",
+          "color": "#84A251",
+          "copicColorId": "YG17",
+          "row": 1,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 39,
+            "bank": 0,
+            "program": 32,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_33",
+          "label": "BS04",
+          "icon": "ic_inst_b000_p033",
+          "packId": "core",
+          "displayName": "SF Finger Bass",
+          "soundFontName": "Finger Bass",
+          "color": "#667D4E",
+          "copicColorId": "YG67",
+          "row": 1,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": "soundfonts/core.sf2",
+            "soundFontIndex": 40,
+            "bank": 0,
+            "program": 33,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_34",
+          "label": "BS05",
+          "icon": "ic_inst_b000_p034",
+          "packId": "full",
+          "displayName": "SF Pick Bass",
+          "soundFontName": "Pick Bass",
+          "color": "#AED44D",
+          "copicColorId": "YG13",
+          "row": 2,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 41,
+            "bank": 0,
+            "program": 34,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_35",
+          "label": "BS06",
+          "icon": "ic_inst_b000_p035",
+          "packId": "full",
+          "displayName": "SF Fretless Bass",
+          "soundFontName": "Fretless Bass",
+          "color": "#92A26B",
+          "copicColorId": "YG63",
+          "row": 2,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 42,
+            "bank": 0,
+            "program": 35,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_36",
+          "label": "BS07",
+          "icon": "ic_inst_b000_p036",
+          "packId": "full",
+          "displayName": "SF Slap Bass 1",
+          "soundFontName": "Slap Bass 1",
+          "color": "#D9F4A4",
+          "copicColorId": "YG11",
+          "row": 3,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 43,
+            "bank": 0,
+            "program": 36,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_37",
+          "label": "BS08",
+          "icon": "ic_inst_b000_p037",
+          "packId": "full",
+          "displayName": "SF Slap Bass 2",
+          "soundFontName": "Slap Bass 2",
+          "color": "#D6DEB0",
+          "copicColorId": "YG61",
+          "row": 3,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 44,
+            "bank": 0,
+            "program": 37,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_1_PROGRAM_38",
+          "label": "BS09",
+          "icon": "ic_inst_b001_p038",
+          "packId": "full",
+          "displayName": "SF Synth Bass 101",
+          "soundFontName": "Synth Bass 101",
+          "color": "#A6BC40",
+          "copicColorId": "YG25",
+          "row": 4,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 128,
+            "bank": 1,
+            "program": 38,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_38",
+          "label": "BS10",
+          "icon": "ic_inst_b008_p038",
+          "packId": "full",
+          "displayName": "SF Acid Bass",
+          "soundFontName": "Acid Bass",
+          "color": "#615C44",
+          "copicColorId": "YG99",
+          "row": 4,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 187,
+            "bank": 8,
+            "program": 38,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_39",
+          "label": "BS11",
+          "icon": "ic_inst_b008_p039",
+          "packId": "full",
+          "displayName": "SF Beef FM Bass",
+          "soundFontName": "Beef FM Bass",
+          "color": "#B1CC3C",
+          "copicColorId": "YG23",
+          "row": 5,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 188,
+            "bank": 8,
+            "program": 39,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_38",
+          "label": "BS12",
+          "icon": "ic_inst_b011_p038",
+          "packId": "full",
+          "displayName": "SF Techno Bass",
+          "soundFontName": "Techno Bass",
+          "color": "#7B6F51",
+          "copicColorId": "YG97",
+          "row": 5,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 218,
+            "bank": 11,
+            "program": 38,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_39",
+          "label": "BS13",
+          "icon": "ic_inst_b011_p039",
+          "packId": "full",
+          "displayName": "SF Pulse Bass",
+          "soundFontName": "Pulse Bass",
+          "color": "#F8EC72",
+          "copicColorId": "YG21",
+          "row": 6,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 219,
+            "bank": 11,
+            "program": 39,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_12_PROGRAM_38",
+          "label": "BS14",
+          "icon": "ic_inst_b012_p038",
+          "packId": "full",
+          "displayName": "SF Mean Saw Bass",
+          "soundFontName": "Mean Saw Bass",
+          "color": "#A28A4E",
+          "copicColorId": "YG95",
+          "row": 6,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 243,
+            "bank": 12,
+            "program": 38,
+            "isDrumKit": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Synth lead",
+      "code": "LD",
+      "columns": 3,
+      "instruments": [
+        {
+          "id": "SF_EIGHT_BIT",
+          "label": "LD01",
+          "icon": "ic_inst_b000_p080",
+          "packId": "core",
+          "displayName": "SF 8 bit",
+          "soundFontName": "Square Lead",
+          "color": "#F4BE82",
+          "copicColorId": "YG93",
+          "row": 0,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": "soundfonts/core.sf2",
+            "soundFontIndex": 9,
+            "bank": 0,
+            "program": 80,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_81",
+          "label": "LD02",
+          "icon": "ic_inst_b000_p081",
+          "packId": "core",
+          "displayName": "SF Saw Lead",
+          "soundFontName": "Saw Lead",
+          "color": "#C1F3D6",
+          "copicColorId": "G00",
+          "row": 0,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": "soundfonts/core.sf2",
+            "soundFontIndex": 82,
+            "bank": 0,
+            "program": 81,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_82",
+          "label": "LD03",
+          "icon": "ic_inst_b000_p082",
+          "packId": "full",
+          "displayName": "SF Synth Calliope",
+          "soundFontName": "Synth Calliope",
+          "color": "#6CBA4B",
+          "copicColorId": "G14",
+          "row": 0,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 83,
+            "bank": 0,
+            "program": 82,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_83",
+          "label": "LD04",
+          "icon": "ic_inst_b000_p083",
+          "packId": "full",
+          "displayName": "SF Chiffer Lead",
+          "soundFontName": "Chiffer Lead",
+          "color": "#CDBD90",
+          "copicColorId": "YG91",
+          "row": 1,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 84,
+            "bank": 0,
+            "program": 83,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_84",
+          "label": "LD05",
+          "icon": "ic_inst_b000_p084",
+          "packId": "full",
+          "displayName": "SF Charang",
+          "soundFontName": "Charang",
+          "color": "#DBF8E3",
+          "copicColorId": "G000",
+          "row": 1,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 85,
+            "bank": 0,
+            "program": 84,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_85",
+          "label": "LD06",
+          "icon": "ic_inst_b000_p085",
+          "packId": "full",
+          "displayName": "SF Solo Vox",
+          "soundFontName": "Solo Vox",
+          "color": "#456150",
+          "copicColorId": "G29",
+          "row": 1,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 86,
+            "bank": 0,
+            "program": 85,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_86",
+          "label": "LD07",
+          "icon": "ic_inst_b000_p086",
+          "packId": "full",
+          "displayName": "SF 5th Saw Wave",
+          "soundFontName": "5th Saw Wave",
+          "color": "#00944C",
+          "copicColorId": "G09",
+          "row": 2,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 87,
+            "bank": 0,
+            "program": 86,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_87",
+          "label": "LD08",
+          "icon": "ic_inst_b000_p087",
+          "packId": "full",
+          "displayName": "SF Bass & Lead",
+          "soundFontName": "Bass & Lead",
+          "color": "#E6F8E7",
+          "copicColorId": "G0000",
+          "row": 2,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 88,
+            "bank": 0,
+            "program": 87,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_1_PROGRAM_80",
+          "label": "LD09",
+          "icon": "ic_inst_b001_p080",
+          "packId": "full",
+          "displayName": "SF Square Wave",
+          "soundFontName": "Square Wave",
+          "color": "#4F6F57",
+          "copicColorId": "G28",
+          "row": 2,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 137,
+            "bank": 1,
+            "program": 80,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_1_PROGRAM_81",
+          "label": "LD10",
+          "icon": "ic_inst_b001_p081",
+          "packId": "full",
+          "displayName": "SF Saw Wave",
+          "soundFontName": "Saw Wave",
+          "color": "#38AC54",
+          "copicColorId": "G05",
+          "row": 3,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 138,
+            "bank": 1,
+            "program": 81,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_80",
+          "label": "LD11",
+          "icon": "ic_inst_b008_p080",
+          "packId": "full",
+          "displayName": "SF Sine Wave",
+          "soundFontName": "Sine Wave",
+          "color": "#0E8F57",
+          "copicColorId": "G19",
+          "row": 3,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 194,
+            "bank": 8,
+            "program": 80,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_81",
+          "label": "LD12",
+          "icon": "ic_inst_b008_p081",
+          "packId": "full",
+          "displayName": "SF Doctor Solo",
+          "soundFontName": "Doctor Solo",
+          "color": "#95AD72",
+          "copicColorId": "G24",
+          "row": 3,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 195,
+            "bank": 8,
+            "program": 81,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_81",
+          "label": "LD13",
+          "icon": "ic_inst_b011_p081",
+          "packId": "full",
+          "displayName": "SF Sawtooth Stab",
+          "soundFontName": "Sawtooth Stab",
+          "color": "#54CA72",
+          "copicColorId": "G03",
+          "row": 4,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 225,
+            "bank": 11,
+            "program": 81,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_12_PROGRAM_80",
+          "label": "LD14",
+          "icon": "ic_inst_b012_p080",
+          "packId": "full",
+          "displayName": "SF Square Lead 2",
+          "soundFontName": "Square Lead 2",
+          "color": "#288758",
+          "copicColorId": "G17",
+          "row": 4,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 246,
+            "bank": 12,
+            "program": 80,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_12_PROGRAM_81",
+          "label": "LD15",
+          "icon": "ic_inst_b012_p081",
+          "packId": "full",
+          "displayName": "SF Saw Lead 2",
+          "soundFontName": "Saw Lead 2",
+          "color": "#B1C790",
+          "copicColorId": "G21",
+          "row": 4,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 247,
+            "bank": 12,
+            "program": 81,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_13_PROGRAM_80",
+          "label": "LD16",
+          "icon": "ic_inst_b013_p080",
+          "packId": "full",
+          "displayName": "SF Square Lead 3",
+          "soundFontName": "Square Lead 3",
+          "color": "#67D488",
+          "copicColorId": "G02",
+          "row": 5,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 254,
+            "bank": 13,
+            "program": 80,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_13_PROGRAM_81",
+          "label": "LD17",
+          "icon": "ic_inst_b013_p081",
+          "packId": "full",
+          "displayName": "SF Saw Lead 3",
+          "soundFontName": "Saw Lead 3",
+          "color": "#149265",
+          "copicColorId": "G16",
+          "row": 5,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 255,
+            "bank": 13,
+            "program": 81,
+            "isDrumKit": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Reed",
+      "code": "RD",
+      "columns": 2,
+      "instruments": [
+        {
+          "id": "SF_SAXOPHONE",
+          "label": "RD01",
+          "icon": "ic_inst_b000_p065",
+          "packId": "full",
+          "displayName": "SF Saxophone",
+          "soundFontName": "Alto Sax",
+          "color": "#D9A025",
+          "copicColorId": "G20",
+          "row": 0,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 12,
+            "bank": 0,
+            "program": 65,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_64",
+          "label": "RD02",
+          "icon": "ic_inst_b000_p064",
+          "packId": "full",
+          "displayName": "SF Soprano Sax",
+          "soundFontName": "Soprano Sax",
+          "color": "#83926C",
+          "copicColorId": "G85",
+          "row": 0,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 68,
+            "bank": 0,
+            "program": 64,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_66",
+          "label": "RD03",
+          "icon": "ic_inst_b000_p066",
+          "packId": "full",
+          "displayName": "SF Tenor Sax",
+          "soundFontName": "Tenor Sax",
+          "color": "#589D74",
+          "copicColorId": "G46",
+          "row": 1,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 69,
+            "bank": 0,
+            "program": 66,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_67",
+          "label": "RD04",
+          "icon": "ic_inst_b000_p067",
+          "packId": "full",
+          "displayName": "SF Baritone Sax",
+          "soundFontName": "Baritone Sax",
+          "color": "#ABBC7E",
+          "copicColorId": "G82",
+          "row": 1,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 70,
+            "bank": 0,
+            "program": 67,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_68",
+          "label": "RD05",
+          "icon": "ic_inst_b000_p068",
+          "packId": "full",
+          "displayName": "SF Oboe",
+          "soundFontName": "Oboe",
+          "color": "#D7E7A8",
+          "copicColorId": "G43",
+          "row": 2,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 71,
+            "bank": 0,
+            "program": 68,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_69",
+          "label": "RD06",
+          "icon": "ic_inst_b000_p069",
+          "packId": "full",
+          "displayName": "SF English Horn",
+          "soundFontName": "English Horn",
+          "color": "#83946A",
+          "copicColorId": "G94",
+          "row": 2,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 72,
+            "bank": 0,
+            "program": 69,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_70",
+          "label": "RD07",
+          "icon": "ic_inst_b000_p070",
+          "packId": "full",
+          "displayName": "SF Bassoon",
+          "soundFontName": "Bassoon",
+          "color": "#E8EDBE",
+          "copicColorId": "G40",
+          "row": 3,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 73,
+            "bank": 0,
+            "program": 70,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_71",
+          "label": "RD08",
+          "icon": "ic_inst_b000_p071",
+          "packId": "full",
+          "displayName": "SF Clarinet",
+          "soundFontName": "Clarinet",
+          "color": "#00878E",
+          "copicColorId": "BG09",
+          "row": 3,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 74,
+            "bank": 0,
+            "program": 71,
+            "isDrumKit": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Organ",
+      "code": "OR",
+      "columns": 3,
+      "instruments": [
+        {
+          "id": "SF_BANK_0_PROGRAM_16",
+          "label": "OR01",
+          "icon": "ic_inst_b000_p016",
+          "packId": "core",
+          "displayName": "SF Tonewheel Organ",
+          "soundFontName": "Tonewheel Organ",
+          "color": "#00939F",
+          "copicColorId": "BG07",
+          "row": 0,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": "soundfonts/core.sf2",
+            "soundFontIndex": 25,
+            "bank": 0,
+            "program": 16,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_17",
+          "label": "OR02",
+          "icon": "ic_inst_b000_p017",
+          "packId": "core",
+          "displayName": "SF Percussive Organ",
+          "soundFontName": "Percussive Organ",
+          "color": "#00BFA4",
+          "copicColorId": "BG15",
+          "row": 0,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": "soundfonts/core.sf2",
+            "soundFontIndex": 26,
+            "bank": 0,
+            "program": 17,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_18",
+          "label": "OR03",
+          "icon": "ic_inst_b000_p018",
+          "packId": "full",
+          "displayName": "SF Rock Organ",
+          "soundFontName": "Rock Organ",
+          "color": "#3DD4CF",
+          "copicColorId": "BG45",
+          "row": 0,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 27,
+            "bank": 0,
+            "program": 18,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_19",
+          "label": "OR04",
+          "icon": "ic_inst_b000_p019",
+          "packId": "full",
+          "displayName": "SF Pipe Organ",
+          "soundFontName": "Pipe Organ",
+          "color": "#00BACB",
+          "copicColorId": "BG05",
+          "row": 1,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 28,
+            "bank": 0,
+            "program": 19,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_20",
+          "label": "OR05",
+          "icon": "ic_inst_b000_p020",
+          "packId": "full",
+          "displayName": "SF Reed Organ",
+          "soundFontName": "Reed Organ",
+          "color": "#C2F2DE",
+          "copicColorId": "BG11",
+          "row": 1,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 29,
+            "bank": 0,
+            "program": 20,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_21",
+          "label": "OR06",
+          "icon": "ic_inst_b000_p021",
+          "packId": "core",
+          "displayName": "SF Accordion",
+          "soundFontName": "Accordion",
+          "color": "#67BDBD",
+          "copicColorId": "BG57",
+          "row": 1,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": "soundfonts/core.sf2",
+            "soundFontIndex": 30,
+            "bank": 0,
+            "program": 21,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_22",
+          "label": "OR07",
+          "icon": "ic_inst_b000_p022",
+          "packId": "core",
+          "displayName": "SF Harmonica",
+          "soundFontName": "Harmonica",
+          "color": "#4CD9E8",
+          "copicColorId": "BG02",
+          "row": 2,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": "soundfonts/core.sf2",
+            "soundFontIndex": 31,
+            "bank": 0,
+            "program": 22,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_23",
+          "label": "OR08",
+          "icon": "ic_inst_b000_p023",
+          "packId": "full",
+          "displayName": "SF Bandoneon",
+          "soundFontName": "Bandoneon",
+          "color": "#D7F3E3",
+          "copicColorId": "BG10",
+          "row": 2,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 32,
+            "bank": 0,
+            "program": 23,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_16",
+          "label": "OR09",
+          "icon": "ic_inst_b008_p016",
+          "packId": "full",
+          "displayName": "SF Detuned Tnwl. Organ",
+          "soundFontName": "Detuned Tnwl. Organ",
+          "color": "#7ED8D8",
+          "copicColorId": "BG53",
+          "row": 2,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 176,
+            "bank": 8,
+            "program": 16,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_17",
+          "label": "OR10",
+          "icon": "ic_inst_b008_p017",
+          "packId": "full",
+          "displayName": "SF Detuned Perc. Organ",
+          "soundFontName": "Detuned Perc. Organ",
+          "color": "#85E6EA",
+          "copicColorId": "BG01",
+          "row": 3,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 177,
+            "bank": 8,
+            "program": 17,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_19",
+          "label": "OR11",
+          "icon": "ic_inst_b008_p019",
+          "packId": "full",
+          "displayName": "SF Pipe Organ 2",
+          "soundFontName": "Pipe Organ 2",
+          "color": "#7BDEC1",
+          "copicColorId": "BG23",
+          "row": 3,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 178,
+            "bank": 8,
+            "program": 19,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_21",
+          "label": "OR12",
+          "icon": "ic_inst_b008_p021",
+          "packId": "full",
+          "displayName": "SF Italian Accordion",
+          "soundFontName": "Italian Accordion",
+          "color": "#4A6B6A",
+          "copicColorId": "BG78",
+          "row": 3,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 179,
+            "bank": 8,
+            "program": 21,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_16",
+          "label": "OR13",
+          "icon": "ic_inst_b011_p016",
+          "packId": "full",
+          "displayName": "SF Tonewheel Org noVel",
+          "soundFontName": "Tonewheel Org noVel",
+          "color": "#DBF7F1",
+          "copicColorId": "BG000",
+          "row": 4,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 212,
+            "bank": 11,
+            "program": 16,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_17",
+          "label": "OR14",
+          "icon": "ic_inst_b011_p017",
+          "packId": "full",
+          "displayName": "SF Percussive Org noVel",
+          "soundFontName": "Percussive Org noVel",
+          "color": "#61DAAC",
+          "copicColorId": "BG34",
+          "row": 4,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 213,
+            "bank": 11,
+            "program": 17,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_18",
+          "label": "OR15",
+          "icon": "ic_inst_b011_p018",
+          "packId": "full",
+          "displayName": "SF Rock Organ noVel",
+          "soundFontName": "Rock Organ noVel",
+          "color": "#7EAEAB",
+          "copicColorId": "BG72",
+          "row": 4,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 214,
+            "bank": 11,
+            "program": 18,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_19",
+          "label": "OR16",
+          "icon": "ic_inst_b011_p019",
+          "packId": "full",
+          "displayName": "SF Pipe Organ noVel",
+          "soundFontName": "Pipe Organ noVel",
+          "color": "#EAF9F0",
+          "copicColorId": "BG0000",
+          "row": 5,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 215,
+            "bank": 11,
+            "program": 19,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_20",
+          "label": "OR17",
+          "icon": "ic_inst_b011_p020",
+          "packId": "full",
+          "displayName": "SF Reed Organ noVel",
+          "soundFontName": "Reed Organ noVel",
+          "color": "#7DE2C4",
+          "copicColorId": "BG32",
+          "row": 5,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 216,
+            "bank": 11,
+            "program": 20,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_12_PROGRAM_16",
+          "label": "OR18",
+          "icon": "ic_inst_b012_p016",
+          "packId": "full",
+          "displayName": "SF Detun Tnwl Org noVel",
+          "soundFontName": "Detun Tnwl Org noVel",
+          "color": "#EFF7EF",
+          "copicColorId": "BG70",
+          "row": 5,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 239,
+            "bank": 12,
+            "program": 16,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_12_PROGRAM_17",
+          "label": "OR19",
+          "icon": "ic_inst_b012_p017",
+          "packId": "full",
+          "displayName": "SF Detun Perc Org noVel",
+          "soundFontName": "Detun Perc Org noVel",
+          "color": "#408784",
+          "copicColorId": "BG18",
+          "row": 6,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 240,
+            "bank": 12,
+            "program": 17,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_12_PROGRAM_19",
+          "label": "OR20",
+          "icon": "ic_inst_b012_p019",
+          "packId": "full",
+          "displayName": "SF Pipe Organ 2 noVel",
+          "soundFontName": "Pipe Organ 2 noVel",
+          "color": "#009489",
+          "copicColorId": "BG49",
+          "row": 6,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 241,
+            "bank": 12,
+            "program": 19,
+            "isDrumKit": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Strings",
+      "code": "ST",
+      "columns": 2,
+      "instruments": [
+        {
+          "id": "SF_BANK_0_PROGRAM_40",
+          "label": "ST01",
+          "icon": "ic_inst_b000_p040",
+          "packId": "full",
+          "displayName": "SF Violin",
+          "soundFontName": "Violin",
+          "color": "#696D60",
+          "copicColorId": "BG99",
+          "row": 0,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 45,
+            "bank": 0,
+            "program": 40,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_41",
+          "label": "ST02",
+          "icon": "ic_inst_b000_p041",
+          "packId": "full",
+          "displayName": "SF Viola",
+          "soundFontName": "Viola",
+          "color": "#00A0D0",
+          "copicColorId": "B05",
+          "row": 0,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 46,
+            "bank": 0,
+            "program": 41,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_42",
+          "label": "ST03",
+          "icon": "ic_inst_b000_p042",
+          "packId": "full",
+          "displayName": "SF Cello",
+          "soundFontName": "Cello",
+          "color": "#6C725D",
+          "copicColorId": "BG96",
+          "row": 1,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 47,
+            "bank": 0,
+            "program": 42,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_43",
+          "label": "ST04",
+          "icon": "ic_inst_b000_p043",
+          "packId": "full",
+          "displayName": "SF Double Bass",
+          "soundFontName": "Double Bass",
+          "color": "#00B7D9",
+          "copicColorId": "B04",
+          "row": 1,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 48,
+            "bank": 0,
+            "program": 43,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_44",
+          "label": "ST05",
+          "icon": "ic_inst_b000_p044",
+          "packId": "full",
+          "displayName": "SF Tremolo Strings",
+          "soundFontName": "Tremolo Strings",
+          "color": "#9EA388",
+          "copicColorId": "BG93",
+          "row": 2,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 49,
+            "bank": 0,
+            "program": 44,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_45",
+          "label": "ST06",
+          "icon": "ic_inst_b000_p045",
+          "packId": "full",
+          "displayName": "SF Pizzicato Strings",
+          "soundFontName": "Pizzicato Strings",
+          "color": "#48D1EC",
+          "copicColorId": "B02",
+          "row": 2,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 50,
+            "bank": 0,
+            "program": 45,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_46",
+          "label": "ST07",
+          "icon": "ic_inst_b000_p046",
+          "packId": "full",
+          "displayName": "SF Orchestral Harp",
+          "soundFontName": "Orchestral Harp",
+          "color": "#E4E8E2",
+          "copicColorId": "BG90",
+          "row": 3,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 51,
+            "bank": 0,
+            "program": 46,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_47",
+          "label": "ST08",
+          "icon": "ic_inst_b000_p047",
+          "packId": "full",
+          "displayName": "SF Timpani",
+          "soundFontName": "Timpani",
+          "color": "#B8F1F1",
+          "copicColorId": "B00",
+          "row": 3,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 52,
+            "bank": 0,
+            "program": 47,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_1_PROGRAM_44",
+          "label": "ST09",
+          "icon": "ic_inst_b001_p044",
+          "packId": "full",
+          "displayName": "SF Tremolo Strings Mono",
+          "soundFontName": "Tremolo Strings Mono",
+          "color": "#0086B6",
+          "copicColorId": "B06",
+          "row": 4,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 129,
+            "bank": 1,
+            "program": 44,
+            "isDrumKit": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Brass",
+      "code": "BR",
+      "columns": 3,
+      "instruments": [
+        {
+          "id": "SF_BANK_0_PROGRAM_56",
+          "label": "BR01",
+          "icon": "ic_inst_b000_p056",
+          "packId": "core",
+          "displayName": "SF Trumpet",
+          "soundFontName": "Trumpet",
+          "color": "#D4F6F2",
+          "copicColorId": "B000",
+          "row": 0,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": "soundfonts/core.sf2",
+            "soundFontIndex": 60,
+            "bank": 0,
+            "program": 56,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_57",
+          "label": "BR02",
+          "icon": "ic_inst_b000_p057",
+          "packId": "full",
+          "displayName": "SF Trombone",
+          "soundFontName": "Trombone",
+          "color": "#405AB9",
+          "copicColorId": "B29",
+          "row": 0,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 61,
+            "bank": 0,
+            "program": 57,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_58",
+          "label": "BR03",
+          "icon": "ic_inst_b000_p058",
+          "packId": "full",
+          "displayName": "SF Tuba",
+          "soundFontName": "Tuba",
+          "color": "#434F6F",
+          "copicColorId": "B39",
+          "row": 0,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 62,
+            "bank": 0,
+            "program": 58,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_59",
+          "label": "BR04",
+          "icon": "ic_inst_b000_p059",
+          "packId": "full",
+          "displayName": "SF Muted Trumpet",
+          "soundFontName": "Muted Trumpet",
+          "color": "#E7F9F1",
+          "copicColorId": "B0000",
+          "row": 1,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 63,
+            "bank": 0,
+            "program": 59,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_60",
+          "label": "BR05",
+          "icon": "ic_inst_b000_p060",
+          "packId": "full",
+          "displayName": "SF French Horns",
+          "soundFontName": "French Horns",
+          "color": "#185EBD",
+          "copicColorId": "B28",
+          "row": 1,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 64,
+            "bank": 0,
+            "program": 60,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_61",
+          "label": "BR06",
+          "icon": "ic_inst_b000_p061",
+          "packId": "full",
+          "displayName": "SF Brass Section",
+          "soundFontName": "Brass Section",
+          "color": "#175D7E",
+          "copicColorId": "B37",
+          "row": 1,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 65,
+            "bank": 0,
+            "program": 61,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_62",
+          "label": "BR07",
+          "icon": "ic_inst_b000_p062",
+          "packId": "full",
+          "displayName": "SF Synth Brass 1",
+          "soundFontName": "Synth Brass 1",
+          "color": "#2D70AB",
+          "copicColorId": "B18",
+          "row": 2,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 66,
+            "bank": 0,
+            "program": 62,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_63",
+          "label": "BR08",
+          "icon": "ic_inst_b000_p063",
+          "packId": "full",
+          "displayName": "SF Synth Brass 2",
+          "soundFontName": "Synth Brass 2",
+          "color": "#387EB6",
+          "copicColorId": "B26",
+          "row": 2,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 67,
+            "bank": 0,
+            "program": 63,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_1_PROGRAM_56",
+          "label": "BR09",
+          "icon": "ic_inst_b001_p056",
+          "packId": "full",
+          "displayName": "SF Trumpet 2",
+          "soundFontName": "Trumpet 2",
+          "color": "#5C9ABC",
+          "copicColorId": "B34",
+          "row": 2,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 133,
+            "bank": 1,
+            "program": 56,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_1_PROGRAM_57",
+          "label": "BR10",
+          "icon": "ic_inst_b001_p057",
+          "packId": "full",
+          "displayName": "SF Trombone 2",
+          "soundFontName": "Trombone 2",
+          "color": "#0097C9",
+          "copicColorId": "B16",
+          "row": 3,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 134,
+            "bank": 1,
+            "program": 57,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_1_PROGRAM_60",
+          "label": "BR11",
+          "icon": "ic_inst_b001_p060",
+          "packId": "full",
+          "displayName": "SF Solo French Horn",
+          "soundFontName": "Solo French Horn",
+          "color": "#6AA6D7",
+          "copicColorId": "B23",
+          "row": 3,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 135,
+            "bank": 1,
+            "program": 60,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_1_PROGRAM_61",
+          "label": "BR12",
+          "icon": "ic_inst_b001_p061",
+          "packId": "full",
+          "displayName": "SF Brass Section Mono",
+          "soundFontName": "Brass Section Mono",
+          "color": "#85D7F5",
+          "copicColorId": "B32",
+          "row": 3,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 136,
+            "bank": 1,
+            "program": 61,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_61",
+          "label": "BR13",
+          "icon": "ic_inst_b008_p061",
+          "packId": "full",
+          "displayName": "SF Brass Section 2",
+          "soundFontName": "Brass Section 2",
+          "color": "#00A0C8",
+          "copicColorId": "B14",
+          "row": 4,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 191,
+            "bank": 8,
+            "program": 61,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_62",
+          "label": "BR14",
+          "icon": "ic_inst_b008_p062",
+          "packId": "full",
+          "displayName": "SF Synth Brass 3",
+          "soundFontName": "Synth Brass 3",
+          "color": "#A4DAEF",
+          "copicColorId": "B21",
+          "row": 4,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 192,
+            "bank": 8,
+            "program": 62,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_63",
+          "label": "BR15",
+          "icon": "ic_inst_b008_p063",
+          "packId": "full",
+          "displayName": "SF Synth Brass 4",
+          "soundFontName": "Synth Brass 4",
+          "color": "#5B9EC3",
+          "copicColorId": "B45",
+          "row": 4,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 193,
+            "bank": 8,
+            "program": 63,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_61",
+          "label": "BR16",
+          "icon": "ic_inst_b011_p061",
+          "packId": "full",
+          "displayName": "SF Brass Section 3",
+          "soundFontName": "Brass Section 3",
+          "color": "#7CD8EF",
+          "copicColorId": "B12",
+          "row": 5,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 223,
+            "bank": 11,
+            "program": 61,
+            "isDrumKit": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Synth effects",
+      "code": "FX",
+      "columns": 2,
+      "instruments": [
+        {
+          "id": "SF_BANK_0_PROGRAM_96",
+          "label": "FX01",
+          "icon": "ic_inst_b000_p096",
+          "packId": "full",
+          "displayName": "SF Ice Rain",
+          "soundFontName": "Ice Rain",
+          "color": "#B7DEEC",
+          "copicColorId": "B41",
+          "row": 0,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 96,
+            "bank": 0,
+            "program": 96,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_97",
+          "label": "FX02",
+          "icon": "ic_inst_b000_p097",
+          "packId": "full",
+          "displayName": "SF Soundtrack",
+          "soundFontName": "Soundtrack",
+          "color": "#49768F",
+          "copicColorId": "B97",
+          "row": 0,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 97,
+            "bank": 0,
+            "program": 97,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_98",
+          "label": "FX03",
+          "icon": "ic_inst_b000_p098",
+          "packId": "full",
+          "displayName": "SF Crystal",
+          "soundFontName": "Crystal",
+          "color": "#94CDD5",
+          "copicColorId": "B52",
+          "row": 1,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 98,
+            "bank": 0,
+            "program": 98,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_99",
+          "label": "FX04",
+          "icon": "ic_inst_b000_p099",
+          "packId": "full",
+          "displayName": "SF Atmosphere",
+          "soundFontName": "Atmosphere",
+          "color": "#64A6C2",
+          "copicColorId": "B95",
+          "row": 1,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 99,
+            "bank": 0,
+            "program": 99,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_100",
+          "label": "FX05",
+          "icon": "ic_inst_b000_p100",
+          "packId": "full",
+          "displayName": "SF Brightness",
+          "soundFontName": "Brightness",
+          "color": "#4245A3",
+          "copicColorId": "B69",
+          "row": 2,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 100,
+            "bank": 0,
+            "program": 100,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_101",
+          "label": "FX06",
+          "icon": "ic_inst_b000_p101",
+          "packId": "full",
+          "displayName": "SF Goblin",
+          "soundFontName": "Goblin",
+          "color": "#8BBFD3",
+          "copicColorId": "B93",
+          "row": 2,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 101,
+            "bank": 0,
+            "program": 101,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_102",
+          "label": "FX07",
+          "icon": "ic_inst_b000_p102",
+          "packId": "full",
+          "displayName": "SF Echo Drops",
+          "soundFontName": "Echo Drops",
+          "color": "#9BC1E6",
+          "copicColorId": "B63",
+          "row": 3,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 102,
+            "bank": 0,
+            "program": 102,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_103",
+          "label": "FX08",
+          "icon": "ic_inst_b000_p103",
+          "packId": "full",
+          "displayName": "SF Star Theme",
+          "soundFontName": "Star Theme",
+          "color": "#B3DAE4",
+          "copicColorId": "B91",
+          "row": 3,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 103,
+            "bank": 0,
+            "program": 103,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_1_PROGRAM_98",
+          "label": "FX09",
+          "icon": "ic_inst_b001_p098",
+          "packId": "full",
+          "displayName": "SF Synth Mallet",
+          "soundFontName": "Synth Mallet",
+          "color": "#E2EBEE",
+          "copicColorId": "B60",
+          "row": 4,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 139,
+            "bank": 1,
+            "program": 98,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_2_PROGRAM_102",
+          "label": "FX10",
+          "icon": "ic_inst_b002_p102",
+          "packId": "full",
+          "displayName": "SF Echo Pan",
+          "soundFontName": "Echo Pan",
+          "color": "#4F506F",
+          "copicColorId": "BV08",
+          "row": 4,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 148,
+            "bank": 2,
+            "program": 102,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_96",
+          "label": "FX11",
+          "icon": "ic_inst_b011_p096",
+          "packId": "full",
+          "displayName": "SF Mystery Pad",
+          "soundFontName": "Mystery Pad",
+          "color": "#504695",
+          "copicColorId": "B79",
+          "row": 5,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 228,
+            "bank": 11,
+            "program": 96,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_98",
+          "label": "FX12",
+          "icon": "ic_inst_b011_p098",
+          "packId": "full",
+          "displayName": "SF Synth Chime",
+          "soundFontName": "Synth Chime",
+          "color": "#5B77A8",
+          "copicColorId": "BV04",
+          "row": 5,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 229,
+            "bank": 11,
+            "program": 98,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_100",
+          "label": "FX13",
+          "icon": "ic_inst_b011_p100",
+          "packId": "full",
+          "displayName": "SF Bright Saw Stack",
+          "soundFontName": "Bright Saw Stack",
+          "color": "#445465",
+          "copicColorId": "B99",
+          "row": 6,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 230,
+            "bank": 11,
+            "program": 100,
+            "isDrumKit": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ethnic",
+      "code": "ET",
+      "columns": 2,
+      "instruments": [
+        {
+          "id": "SF_BANK_0_PROGRAM_104",
+          "label": "ET01",
+          "icon": "ic_inst_b000_p104",
+          "packId": "full",
+          "displayName": "SF Sitar",
+          "soundFontName": "Sitar",
+          "color": "#9DB0DB",
+          "copicColorId": "BV02",
+          "row": 0,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 104,
+            "bank": 0,
+            "program": 104,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_105",
+          "label": "ET02",
+          "icon": "ic_inst_b000_p105",
+          "packId": "full",
+          "displayName": "SF Banjo",
+          "soundFontName": "Banjo",
+          "color": "#6A88C2",
+          "copicColorId": "BV13",
+          "row": 0,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 105,
+            "bank": 0,
+            "program": 105,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_106",
+          "label": "ET03",
+          "icon": "ic_inst_b000_p106",
+          "packId": "full",
+          "displayName": "SF Shamisen",
+          "soundFontName": "Shamisen",
+          "color": "#C6C4DD",
+          "copicColorId": "BV00",
+          "row": 1,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 106,
+            "bank": 0,
+            "program": 106,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_107",
+          "label": "ET04",
+          "icon": "ic_inst_b000_p107",
+          "packId": "full",
+          "displayName": "SF Koto",
+          "soundFontName": "Koto",
+          "color": "#A4A2C3",
+          "copicColorId": "BV11",
+          "row": 1,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 107,
+            "bank": 0,
+            "program": 107,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_108",
+          "label": "ET05",
+          "icon": "ic_inst_b000_p108",
+          "packId": "full",
+          "displayName": "SF Kalimba",
+          "soundFontName": "Kalimba",
+          "color": "#D9D8E6",
+          "copicColorId": "BV000",
+          "row": 2,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 108,
+            "bank": 0,
+            "program": 108,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_109",
+          "label": "ET06",
+          "icon": "ic_inst_b000_p109",
+          "packId": "full",
+          "displayName": "SF Bagpipes",
+          "soundFontName": "Bagpipes",
+          "color": "#484551",
+          "copicColorId": "BV29",
+          "row": 2,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 109,
+            "bank": 0,
+            "program": 109,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_110",
+          "label": "ET07",
+          "icon": "ic_inst_b000_p110",
+          "packId": "full",
+          "displayName": "SF Fiddle",
+          "soundFontName": "Fiddle",
+          "color": "#EFEEED",
+          "copicColorId": "BV0000",
+          "row": 3,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 110,
+            "bank": 0,
+            "program": 110,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_111",
+          "label": "ET08",
+          "icon": "ic_inst_b000_p111",
+          "packId": "full",
+          "displayName": "SF Shenai",
+          "soundFontName": "Shenai",
+          "color": "#6C7A8C",
+          "copicColorId": "BV25",
+          "row": 3,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 111,
+            "bank": 0,
+            "program": 111,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_107",
+          "label": "ET09",
+          "icon": "ic_inst_b008_p107",
+          "packId": "full",
+          "displayName": "SF Taisho Koto",
+          "soundFontName": "Taisho Koto",
+          "color": "#5D6E94",
+          "copicColorId": "BV17",
+          "row": 4,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 196,
+            "bank": 8,
+            "program": 107,
+            "isDrumKit": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Percussive",
+      "code": "PC",
+      "columns": 2,
+      "instruments": [
+        {
+          "id": "SF_BANK_0_PROGRAM_112",
+          "label": "PC01",
+          "icon": "ic_inst_b000_p112",
+          "packId": "full",
+          "displayName": "SF Tinker Bell",
+          "soundFontName": "Tinker Bell",
+          "color": "#8B9BAC",
+          "copicColorId": "BV23",
+          "row": 0,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 112,
+            "bank": 0,
+            "program": 112,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_113",
+          "label": "PC02",
+          "icon": "ic_inst_b000_p113",
+          "packId": "full",
+          "displayName": "SF Agogo",
+          "soundFontName": "Agogo",
+          "color": "#E3C2DE",
+          "copicColorId": "V01",
+          "row": 0,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 113,
+            "bank": 0,
+            "program": 113,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_114",
+          "label": "PC03",
+          "icon": "ic_inst_b000_p114",
+          "packId": "full",
+          "displayName": "SF Steel Drums",
+          "soundFontName": "Steel Drums",
+          "color": "#C6CCD8",
+          "copicColorId": "BV20",
+          "row": 1,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 114,
+            "bank": 0,
+            "program": 114,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_115",
+          "label": "PC04",
+          "icon": "ic_inst_b000_p115",
+          "packId": "full",
+          "displayName": "SF Wood Block",
+          "soundFontName": "Wood Block",
+          "color": "#FCE8EC",
+          "copicColorId": "V000",
+          "row": 1,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 115,
+            "bank": 0,
+            "program": 115,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_116",
+          "label": "PC05",
+          "icon": "ic_inst_b000_p116",
+          "packId": "full",
+          "displayName": "SF Taiko Drum",
+          "soundFontName": "Taiko Drum",
+          "color": "#D2D7E7",
+          "copicColorId": "BV31",
+          "row": 2,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 116,
+            "bank": 0,
+            "program": 116,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_117",
+          "label": "PC06",
+          "icon": "ic_inst_b000_p117",
+          "packId": "full",
+          "displayName": "SF Melodic Tom",
+          "soundFontName": "Melodic Tom",
+          "color": "#FDF0ED",
+          "copicColorId": "V0000",
+          "row": 2,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 117,
+            "bank": 0,
+            "program": 117,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_118",
+          "label": "PC07",
+          "icon": "ic_inst_b000_p118",
+          "packId": "full",
+          "displayName": "SF Synth Drum",
+          "soundFontName": "Synth Drum",
+          "color": "#5D496A",
+          "copicColorId": "V09",
+          "row": 3,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 118,
+            "bank": 0,
+            "program": 118,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_119",
+          "label": "PC08",
+          "icon": "ic_inst_b000_p119",
+          "packId": "full",
+          "displayName": "SF Reverse Cymbal",
+          "soundFontName": "Reverse Cymbal",
+          "color": "#746D9B",
+          "copicColorId": "V17",
+          "row": 3,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 119,
+            "bank": 0,
+            "program": 119,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_115",
+          "label": "PC09",
+          "icon": "ic_inst_b008_p115",
+          "packId": "full",
+          "displayName": "SF Castanets",
+          "soundFontName": "Castanets",
+          "color": "#A26B98",
+          "copicColorId": "V06",
+          "row": 4,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 197,
+            "bank": 8,
+            "program": 115,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_116",
+          "label": "PC10",
+          "icon": "ic_inst_b008_p116",
+          "packId": "full",
+          "displayName": "SF Concert Bass Drum",
+          "soundFontName": "Concert Bass Drum",
+          "color": "#A783B5",
+          "copicColorId": "V15",
+          "row": 4,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 198,
+            "bank": 8,
+            "program": 116,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_117",
+          "label": "PC11",
+          "icon": "ic_inst_b008_p117",
+          "packId": "full",
+          "displayName": "SF Melodic Tom 2",
+          "soundFontName": "Melodic Tom 2",
+          "color": "#C77FAF",
+          "copicColorId": "V05",
+          "row": 5,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 199,
+            "bank": 8,
+            "program": 117,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_118",
+          "label": "PC12",
+          "icon": "ic_inst_b008_p118",
+          "packId": "full",
+          "displayName": "SF 808 Tom",
+          "soundFontName": "808 Tom",
+          "color": "#6B658C",
+          "copicColorId": "V28",
+          "row": 5,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 200,
+            "bank": 8,
+            "program": 118,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_119",
+          "label": "PC13",
+          "icon": "ic_inst_b011_p119",
+          "packId": "full",
+          "displayName": "SF Cymbal Crash",
+          "soundFontName": "Cymbal Crash",
+          "color": "#BD8AE6",
+          "copicColorId": "V04",
+          "row": 6,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 231,
+            "bank": 11,
+            "program": 119,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_12_PROGRAM_119",
+          "label": "PC14",
+          "icon": "ic_inst_b012_p119",
+          "packId": "full",
+          "displayName": "SF Tambourine",
+          "soundFontName": "Tambourine",
+          "color": "#938FAD",
+          "copicColorId": "V25",
+          "row": 6,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 250,
+            "bank": 12,
+            "program": 119,
+            "isDrumKit": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sound effects",
+      "code": "SF",
+      "columns": 7,
+      "instruments": [
+        {
+          "id": "SF_BANK_0_PROGRAM_120",
+          "label": "SF01",
+          "icon": "ic_inst_b000_p120",
+          "packId": "full",
+          "displayName": "SF Fret Noise",
+          "soundFontName": "Fret Noise",
+          "color": "#B2AFCF",
+          "copicColorId": "V22",
+          "row": 0,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 120,
+            "bank": 0,
+            "program": 120,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_121",
+          "label": "SF02",
+          "icon": "ic_inst_b000_p121",
+          "packId": "full",
+          "displayName": "SF Breath Noise",
+          "soundFontName": "Breath Noise",
+          "color": "#F85DB3",
+          "copicColorId": "RV06",
+          "row": 0,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 121,
+            "bank": 0,
+            "program": 121,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_122",
+          "label": "SF03",
+          "icon": "ic_inst_b000_p122",
+          "packId": "full",
+          "displayName": "SF Seashore",
+          "soundFontName": "Seashore",
+          "color": "#F26383",
+          "copicColorId": "RV14",
+          "row": 0,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 122,
+            "bank": 0,
+            "program": 122,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_123",
+          "label": "SF04",
+          "icon": "ic_inst_b000_p123",
+          "packId": "full",
+          "displayName": "SF Birds",
+          "soundFontName": "Birds",
+          "color": "#DD7C9C",
+          "copicColorId": "RV34",
+          "row": 0,
+          "column": 3,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 123,
+            "bank": 0,
+            "program": 123,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_124",
+          "label": "SF05",
+          "icon": "ic_inst_b000_p124",
+          "packId": "full",
+          "displayName": "SF Telephone 1",
+          "soundFontName": "Telephone 1",
+          "color": "#614D4F",
+          "copicColorId": "RV99",
+          "row": 0,
+          "column": 4,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 124,
+            "bank": 0,
+            "program": 124,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_125",
+          "label": "SF06",
+          "icon": "ic_inst_b000_p125",
+          "packId": "full",
+          "displayName": "SF Helicopter",
+          "soundFontName": "Helicopter",
+          "color": "#FFAC8F",
+          "copicColorId": "R02",
+          "row": 0,
+          "column": 5,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 125,
+            "bank": 0,
+            "program": 125,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_126",
+          "label": "SF07",
+          "icon": "ic_inst_b000_p126",
+          "packId": "full",
+          "displayName": "SF Applause",
+          "soundFontName": "Applause",
+          "color": "#FFBFA7",
+          "copicColorId": "R12",
+          "row": 0,
+          "column": 6,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 126,
+            "bank": 0,
+            "program": 126,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_0_PROGRAM_127",
+          "label": "SF08",
+          "icon": "ic_inst_b000_p127",
+          "packId": "full",
+          "displayName": "SF Gun Shot",
+          "soundFontName": "Gun Shot",
+          "color": "#DFDCE3",
+          "copicColorId": "V20",
+          "row": 1,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 127,
+            "bank": 0,
+            "program": 127,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_1_PROGRAM_120",
+          "label": "SF09",
+          "icon": "ic_inst_b001_p120",
+          "packId": "full",
+          "displayName": "SF Cut Noise",
+          "soundFontName": "Cut Noise",
+          "color": "#FFCEED",
+          "copicColorId": "RV02",
+          "row": 1,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 140,
+            "bank": 1,
+            "program": 120,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_1_PROGRAM_121",
+          "label": "SF10",
+          "icon": "ic_inst_b001_p121",
+          "packId": "full",
+          "displayName": "SF Fl. Key Click",
+          "soundFontName": "Fl. Key Click",
+          "color": "#FF8FAD",
+          "copicColorId": "RV13",
+          "row": 1,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 141,
+            "bank": 1,
+            "program": 121,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_1_PROGRAM_122",
+          "label": "SF11",
+          "icon": "ic_inst_b001_p122",
+          "packId": "full",
+          "displayName": "SF Rain",
+          "soundFontName": "Rain",
+          "color": "#F4ABB4",
+          "copicColorId": "RV32",
+          "row": 1,
+          "column": 3,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 142,
+            "bank": 1,
+            "program": 122,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_1_PROGRAM_123",
+          "label": "SF12",
+          "icon": "ic_inst_b001_p123",
+          "packId": "full",
+          "displayName": "SF Dog",
+          "soundFontName": "Dog",
+          "color": "#BC8797",
+          "copicColorId": "RV95",
+          "row": 1,
+          "column": 4,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 143,
+            "bank": 1,
+            "program": 123,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_1_PROGRAM_124",
+          "label": "SF13",
+          "icon": "ic_inst_b001_p124",
+          "packId": "full",
+          "displayName": "SF Telephone 2",
+          "soundFontName": "Telephone 2",
+          "color": "#FFD7C2",
+          "copicColorId": "R01",
+          "row": 1,
+          "column": 5,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 144,
+            "bank": 1,
+            "program": 124,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_1_PROGRAM_125",
+          "label": "SF14",
+          "icon": "ic_inst_b001_p125",
+          "packId": "full",
+          "displayName": "SF Car-Engine",
+          "soundFontName": "Car-Engine",
+          "color": "#FFD4C2",
+          "copicColorId": "R11",
+          "row": 1,
+          "column": 6,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 145,
+            "bank": 1,
+            "program": 125,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_1_PROGRAM_126",
+          "label": "SF15",
+          "icon": "ic_inst_b001_p126",
+          "packId": "full",
+          "displayName": "SF Laughing",
+          "soundFontName": "Laughing",
+          "color": "#625159",
+          "copicColorId": "V99",
+          "row": 2,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 146,
+            "bank": 1,
+            "program": 126,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_1_PROGRAM_127",
+          "label": "SF16",
+          "icon": "ic_inst_b001_p127",
+          "packId": "full",
+          "displayName": "SF Machine Gun",
+          "soundFontName": "Machine Gun",
+          "color": "#FFE9EC",
+          "copicColorId": "RV00",
+          "row": 2,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 147,
+            "bank": 1,
+            "program": 127,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_2_PROGRAM_120",
+          "label": "SF17",
+          "icon": "ic_inst_b002_p120",
+          "packId": "full",
+          "displayName": "SF String Slap",
+          "soundFontName": "String Slap",
+          "color": "#F9BBC0",
+          "copicColorId": "RV11",
+          "row": 2,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 149,
+            "bank": 2,
+            "program": 120,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_2_PROGRAM_122",
+          "label": "SF18",
+          "icon": "ic_inst_b002_p122",
+          "packId": "full",
+          "displayName": "SF Thunder",
+          "soundFontName": "Thunder",
+          "color": "#FFA79B",
+          "copicColorId": "RV42",
+          "row": 2,
+          "column": 3,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 150,
+            "bank": 2,
+            "program": 122,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_2_PROGRAM_123",
+          "label": "SF19",
+          "icon": "ic_inst_b002_p123",
+          "packId": "full",
+          "displayName": "SF Horse Gallop",
+          "soundFontName": "Horse Gallop",
+          "color": "#E0B0BC",
+          "copicColorId": "RV93",
+          "row": 2,
+          "column": 4,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 151,
+            "bank": 2,
+            "program": 123,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_2_PROGRAM_124",
+          "label": "SF20",
+          "icon": "ic_inst_b002_p124",
+          "packId": "full",
+          "displayName": "SF Door Creaking",
+          "soundFontName": "Door Creaking",
+          "color": "#FFE3D4",
+          "copicColorId": "R00",
+          "row": 2,
+          "column": 5,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 152,
+            "bank": 2,
+            "program": 124,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_2_PROGRAM_125",
+          "label": "SF21",
+          "icon": "ic_inst_b002_p125",
+          "packId": "full",
+          "displayName": "SF Car-Stop",
+          "soundFontName": "Car-Stop",
+          "color": "#BB3E45",
+          "copicColorId": "R29",
+          "row": 2,
+          "column": 6,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 153,
+            "bank": 2,
+            "program": 125,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_2_PROGRAM_126",
+          "label": "SF22",
+          "icon": "ic_inst_b002_p126",
+          "packId": "full",
+          "displayName": "SF Scream",
+          "soundFontName": "Scream",
+          "color": "#B494A2",
+          "copicColorId": "V95",
+          "row": 3,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 154,
+            "bank": 2,
+            "program": 126,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_2_PROGRAM_127",
+          "label": "SF23",
+          "icon": "ic_inst_b002_p127",
+          "packId": "full",
+          "displayName": "SF Lasergun",
+          "soundFontName": "Lasergun",
+          "color": "#FFF2F0",
+          "copicColorId": "RV000",
+          "row": 3,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 155,
+            "bank": 2,
+            "program": 127,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_3_PROGRAM_122",
+          "label": "SF24",
+          "icon": "ic_inst_b003_p122",
+          "packId": "full",
+          "displayName": "SF Wind",
+          "soundFontName": "Wind",
+          "color": "#FFE1EA",
+          "copicColorId": "RV10",
+          "row": 3,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 156,
+            "bank": 3,
+            "program": 122,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_3_PROGRAM_123",
+          "label": "SF25",
+          "icon": "ic_inst_b003_p123",
+          "packId": "full",
+          "displayName": "SF Bird 2",
+          "soundFontName": "Bird 2",
+          "color": "#E485B6",
+          "copicColorId": "RV55",
+          "row": 3,
+          "column": 3,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 157,
+            "bank": 3,
+            "program": 123,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_3_PROGRAM_124",
+          "label": "SF26",
+          "icon": "ic_inst_b003_p124",
+          "packId": "full",
+          "displayName": "SF Door",
+          "soundFontName": "Door",
+          "color": "#F3D8DB",
+          "copicColorId": "RV91",
+          "row": 3,
+          "column": 4,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 158,
+            "bank": 3,
+            "program": 124,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_3_PROGRAM_125",
+          "label": "SF27",
+          "icon": "ic_inst_b003_p125",
+          "packId": "full",
+          "displayName": "SF Car-Pass",
+          "soundFontName": "Car-Pass",
+          "color": "#FFEFE3",
+          "copicColorId": "R000",
+          "row": 3,
+          "column": 5,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 159,
+            "bank": 3,
+            "program": 125,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_3_PROGRAM_126",
+          "label": "SF28",
+          "icon": "ic_inst_b003_p126",
+          "packId": "full",
+          "displayName": "SF Punch",
+          "soundFontName": "Punch",
+          "color": "#CD4D4D",
+          "copicColorId": "R27",
+          "row": 3,
+          "column": 6,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 160,
+            "bank": 3,
+            "program": 126,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_3_PROGRAM_127",
+          "label": "SF29",
+          "icon": "ic_inst_b003_p127",
+          "packId": "full",
+          "displayName": "SF Explosion",
+          "soundFontName": "Explosion",
+          "color": "#D4B6C0",
+          "copicColorId": "V93",
+          "row": 4,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 161,
+            "bank": 3,
+            "program": 127,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_4_PROGRAM_122",
+          "label": "SF30",
+          "icon": "ic_inst_b004_p122",
+          "packId": "full",
+          "displayName": "SF Stream",
+          "soundFontName": "Stream",
+          "color": "#FFF7F1",
+          "copicColorId": "RV0000",
+          "row": 4,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 162,
+            "bank": 4,
+            "program": 122,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_4_PROGRAM_124",
+          "label": "SF31",
+          "icon": "ic_inst_b004_p124",
+          "packId": "full",
+          "displayName": "SF Scratch",
+          "soundFontName": "Scratch",
+          "color": "#F1617D",
+          "copicColorId": "RV25",
+          "row": 4,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 163,
+            "bank": 4,
+            "program": 124,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_4_PROGRAM_125",
+          "label": "SF32",
+          "icon": "ic_inst_b004_p125",
+          "packId": "full",
+          "displayName": "SF Car-Crash",
+          "soundFontName": "Car-Crash",
+          "color": "#F9C9DE",
+          "copicColorId": "RV52",
+          "row": 4,
+          "column": 3,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 164,
+            "bank": 4,
+            "program": 125,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_4_PROGRAM_126",
+          "label": "SF33",
+          "icon": "ic_inst_b004_p126",
+          "packId": "full",
+          "displayName": "SF Heart Beat",
+          "soundFontName": "Heart Beat",
+          "color": "#D75341",
+          "copicColorId": "R08",
+          "row": 4,
+          "column": 4,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 165,
+            "bank": 4,
+            "program": 126,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_5_PROGRAM_122",
+          "label": "SF34",
+          "icon": "ic_inst_b005_p122",
+          "packId": "full",
+          "displayName": "SF Bubbles",
+          "soundFontName": "Bubbles",
+          "color": "#E55951",
+          "copicColorId": "R17",
+          "row": 4,
+          "column": 5,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 166,
+            "bank": 5,
+            "program": 122,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_5_PROGRAM_124",
+          "label": "SF35",
+          "icon": "ic_inst_b005_p124",
+          "packId": "full",
+          "displayName": "SF Windchime",
+          "soundFontName": "Windchime",
+          "color": "#E75E5A",
+          "copicColorId": "R24",
+          "row": 4,
+          "column": 6,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 167,
+            "bank": 5,
+            "program": 124,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_5_PROGRAM_125",
+          "label": "SF36",
+          "icon": "ic_inst_b005_p125",
+          "packId": "full",
+          "displayName": "SF Siren",
+          "soundFontName": "Siren",
+          "color": "#E6D0D3",
+          "copicColorId": "V91",
+          "row": 5,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 168,
+            "bank": 5,
+            "program": 125,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_5_PROGRAM_126",
+          "label": "SF37",
+          "icon": "ic_inst_b005_p126",
+          "packId": "full",
+          "displayName": "SF Footsteps",
+          "soundFontName": "Footsteps",
+          "color": "#AD496B",
+          "copicColorId": "RV19",
+          "row": 5,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 169,
+            "bank": 5,
+            "program": 126,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_6_PROGRAM_125",
+          "label": "SF38",
+          "icon": "ic_inst_b006_p125",
+          "packId": "full",
+          "displayName": "SF Train",
+          "soundFontName": "Train",
+          "color": "#FF9CB5",
+          "copicColorId": "RV23",
+          "row": 5,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 170,
+            "bank": 6,
+            "program": 125,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_7_PROGRAM_125",
+          "label": "SF39",
+          "icon": "ic_inst_b007_p125",
+          "packId": "full",
+          "displayName": "SF Jet Plane",
+          "soundFontName": "Jet Plane",
+          "color": "#81494A",
+          "copicColorId": "RV69",
+          "row": 5,
+          "column": 3,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 171,
+            "bank": 7,
+            "program": 125,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_8_PROGRAM_125",
+          "label": "SF40",
+          "icon": "ic_inst_b008_p125",
+          "packId": "full",
+          "displayName": "SF Starship",
+          "soundFontName": "Starship",
+          "color": "#ED5D47",
+          "copicColorId": "R05",
+          "row": 5,
+          "column": 4,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 201,
+            "bank": 8,
+            "program": 125,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_9_PROGRAM_125",
+          "label": "SF41",
+          "icon": "ic_inst_b009_p125",
+          "packId": "full",
+          "displayName": "SF Burst Noise",
+          "soundFontName": "Burst Noise",
+          "color": "#F76D67",
+          "copicColorId": "R14",
+          "row": 5,
+          "column": 5,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 203,
+            "bank": 9,
+            "program": 125,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_121",
+          "label": "SF42",
+          "icon": "ic_inst_b011_p121",
+          "packId": "full",
+          "displayName": "SF Filter Snap",
+          "soundFontName": "Filter Snap",
+          "color": "#FF8682",
+          "copicColorId": "R22",
+          "row": 5,
+          "column": 6,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 232,
+            "bank": 11,
+            "program": 121,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_122",
+          "label": "SF43",
+          "icon": "ic_inst_b011_p122",
+          "packId": "full",
+          "displayName": "SF Howling Winds",
+          "soundFontName": "Howling Winds",
+          "color": "#CD4479",
+          "copicColorId": "RV09",
+          "row": 6,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 233,
+            "bank": 11,
+            "program": 122,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_11_PROGRAM_127",
+          "label": "SF44",
+          "icon": "ic_inst_b011_p127",
+          "packId": "full",
+          "displayName": "SF Interference",
+          "soundFontName": "Interference",
+          "color": "#B8507C",
+          "copicColorId": "RV17",
+          "row": 6,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 234,
+            "bank": 11,
+            "program": 127,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_12_PROGRAM_122",
+          "label": "SF45",
+          "icon": "ic_inst_b012_p122",
+          "packId": "full",
+          "displayName": "SF White Noise Wave",
+          "soundFontName": "White Noise Wave",
+          "color": "#FFBCCE",
+          "copicColorId": "RV21",
+          "row": 6,
+          "column": 2,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 251,
+            "bank": 12,
+            "program": 122,
+            "isDrumKit": false
+          }
+        },
+        {
+          "id": "SF_BANK_12_PROGRAM_127",
+          "label": "SF46",
+          "icon": "ic_inst_b012_p127",
+          "packId": "full",
+          "displayName": "SF Shooting Star",
+          "soundFontName": "Shooting Star",
+          "color": "#A95C8D",
+          "copicColorId": "RV66",
+          "row": 6,
+          "column": 3,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 252,
+            "bank": 12,
+            "program": 127,
+            "isDrumKit": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Drum kits",
+      "code": "DR",
+      "columns": 2,
+      "instruments": [
+        {
+          "id": "SF_BANK_128_PROGRAM_0",
+          "label": "DR01",
+          "icon": "ic_inst_b128_p000",
+          "packId": "full",
+          "displayName": "SF Standard 1",
+          "soundFontName": "Standard 1",
+          "color": "#FFB1AB",
+          "copicColorId": "R21",
+          "row": 0,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 261,
+            "bank": 128,
+            "program": 0,
+            "isDrumKit": true
+          }
+        },
+        {
+          "id": "SF_BANK_128_PROGRAM_1",
+          "label": "DR02",
+          "icon": "ic_inst_b128_p001",
+          "packId": "full",
+          "displayName": "SF Standard 2",
+          "soundFontName": "Standard 2",
+          "color": "#FF8897",
+          "copicColorId": "R43",
+          "row": 0,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 262,
+            "bank": 128,
+            "program": 1,
+            "isDrumKit": true
+          }
+        },
+        {
+          "id": "SF_BANK_128_PROGRAM_2",
+          "label": "DR03",
+          "icon": "ic_inst_b128_p002",
+          "packId": "full",
+          "displayName": "SF Standard 3",
+          "soundFontName": "Standard 3",
+          "color": "#FFC5BC",
+          "copicColorId": "R20",
+          "row": 1,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 263,
+            "bank": 128,
+            "program": 2,
+            "isDrumKit": true
+          }
+        },
+        {
+          "id": "SF_BANK_128_PROGRAM_8",
+          "label": "DR04",
+          "icon": "ic_inst_b128_p008",
+          "packId": "full",
+          "displayName": "SF Room",
+          "soundFontName": "Room",
+          "color": "#874545",
+          "copicColorId": "R59",
+          "row": 1,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 264,
+            "bank": 128,
+            "program": 8,
+            "isDrumKit": true
+          }
+        },
+        {
+          "id": "SF_BANK_128_PROGRAM_16",
+          "label": "DR05",
+          "icon": "ic_inst_b128_p016",
+          "packId": "full",
+          "displayName": "SF Power",
+          "soundFontName": "Power",
+          "color": "#BC4655",
+          "copicColorId": "R37",
+          "row": 2,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 265,
+            "bank": 128,
+            "program": 16,
+            "isDrumKit": true
+          }
+        },
+        {
+          "id": "SF_BANK_128_PROGRAM_24",
+          "label": "DR06",
+          "icon": "ic_inst_b128_p024",
+          "packId": "full",
+          "displayName": "SF Electronic",
+          "soundFontName": "Electronic",
+          "color": "#D07C95",
+          "copicColorId": "R56",
+          "row": 2,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 266,
+            "bank": 128,
+            "program": 24,
+            "isDrumKit": true
+          }
+        },
+        {
+          "id": "SF_BANK_128_PROGRAM_25",
+          "label": "DR07",
+          "icon": "ic_inst_b128_p025",
+          "packId": "full",
+          "displayName": "SF 808/909",
+          "soundFontName": "808/909",
+          "color": "#E85764",
+          "copicColorId": "R35",
+          "row": 3,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 267,
+            "bank": 128,
+            "program": 25,
+            "isDrumKit": true
+          }
+        },
+        {
+          "id": "SF_BANK_128_PROGRAM_26",
+          "label": "DR08",
+          "icon": "ic_inst_b128_p026",
+          "packId": "full",
+          "displayName": "SF Dance",
+          "soundFontName": "Dance",
+          "color": "#7C4540",
+          "copicColorId": "R89",
+          "row": 3,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 268,
+            "bank": 128,
+            "program": 26,
+            "isDrumKit": true
+          }
+        },
+        {
+          "id": "SF_BANK_128_PROGRAM_32",
+          "label": "DR09",
+          "icon": "ic_inst_b128_p032",
+          "packId": "full",
+          "displayName": "SF Jazz",
+          "soundFontName": "Jazz",
+          "color": "#FFA3A2",
+          "copicColorId": "R32",
+          "row": 4,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 269,
+            "bank": 128,
+            "program": 32,
+            "isDrumKit": true
+          }
+        },
+        {
+          "id": "SF_BANK_128_PROGRAM_40",
+          "label": "DR10",
+          "icon": "ic_inst_b128_p040",
+          "packId": "full",
+          "displayName": "SF Brush",
+          "soundFontName": "Brush",
+          "color": "#D46E87",
+          "copicColorId": "R85",
+          "row": 4,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 270,
+            "bank": 128,
+            "program": 40,
+            "isDrumKit": true
+          }
+        },
+        {
+          "id": "SF_BANK_128_PROGRAM_48",
+          "label": "DR11",
+          "icon": "ic_inst_b128_p048",
+          "packId": "full",
+          "displayName": "SF Orchestral",
+          "soundFontName": "Orchestral",
+          "color": "#FFD7C9",
+          "copicColorId": "R30",
+          "row": 5,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 271,
+            "bank": 128,
+            "program": 48,
+            "isDrumKit": true
+          }
+        },
+        {
+          "id": "SF_BANK_128_PROGRAM_56",
+          "label": "DR12",
+          "icon": "ic_inst_b128_p056",
+          "packId": "full",
+          "displayName": "SF SFX",
+          "soundFontName": "SFX",
+          "color": "#F6C1CF",
+          "copicColorId": "R81",
+          "row": 5,
+          "column": 1,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 272,
+            "bank": 128,
+            "program": 56,
+            "isDrumKit": true
+          }
+        },
+        {
+          "id": "SF_BANK_128_PROGRAM_127",
+          "label": "DR13",
+          "icon": "ic_inst_b128_p127",
+          "packId": "full",
+          "displayName": "SF CM-64/32L",
+          "soundFontName": "CM-64/32L",
+          "color": "#BB434E",
+          "copicColorId": "R46",
+          "row": 6,
+          "column": 0,
+          "sound": {
+            "engine": "fluidsynth",
+            "soundFontAsset": null,
+            "soundFontIndex": 273,
+            "bank": 128,
+            "program": 127,
+            "isDrumKit": true
+          }
+        }
+      ]
+    }
+  ]
+}
